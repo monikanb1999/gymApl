@@ -14,11 +14,8 @@
         <!-- Customize your theme here. -->
 
     </style>
-    <style  name="Theme.GymApplication.NoActionBar" >
-        <item name="windowActionBar">false</item>
-        <item name="windowNoTitle">true</item>
-    </style>
-    <style  name="Theme.GymApplication.SplashTheme" parent="Theme.MaterialComponents.DayNight">
+
+    <style  name="Theme.GymApplication.SplashTheme" parent="Theme.AppCompat.Light.NoActionBar">
     <item name="windowActionBar">false</item>
     <item name="windowNoTitle">true</item>
     </style>

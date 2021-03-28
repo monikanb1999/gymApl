@@ -10,7 +10,7 @@ class Repository(private val gymDao: GymDao) {
     fun inserttablerepository(customerDetails: CustomerDetails){
         return gymDao.insertcustomerdetails(customerDetails)//1
     }
+    }
 //    fun updatetablerepository(customerDetails: CustomerDetails){
 //        return gymDao.updatetable(customerDetails)
 //    }
-}
