@@ -18,5 +18,6 @@
     <style  name="Theme.GymApplication.SplashTheme" parent="Theme.AppCompat.Light.NoActionBar">
     <item name="windowActionBar">false</item>
     <item name="windowNoTitle">true</item>
+        <item name="android:windowBackground">@drawable/ic_add</item>
     </style>
 </resources>

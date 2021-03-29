@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+    <variable
+    name="Edithandler"
+    type="com.example.gymapplication.HomeDetails" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".ui.Activity.EditableHomeActivity">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:layout_margin="30dp"
+            android:padding="10dp"
+            android:id="@+id/tvprofile"
+            app:layout_constraintTop_toTopOf="parent"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            android:text="MY PROFILE"/>
+
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+           android:hint="enter height"
+            android:layout_margin="20dp"
+            android:textSize="20dp"
+            android:drawableLeft="@drawable/ic_height"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvprofile"
+            android:id="@+id/etheight"/>
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="enter weight"
+            android:layout_margin="20dp"
+            android:textSize="20dp"
+            android:drawableLeft="@drawable/ic_baseline_line_weight_24"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/etheight"
+            android:id="@+id/etweight"/>
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="enter targeted weight"
+            android:layout_margin="20dp"
+            android:textSize="20dp"
+            android:drawableLeft="@drawable/ic_baseline_point_of_sale_24"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/etweight"
+            android:id="@+id/ettargetweight"/>
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="enter gender "
+            android:layout_margin="20dp"
+            android:textSize="20dp"
+            android:drawableLeft="@drawable/ic_baseline_person_24"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/ettargetweight"
+            android:id="@+id/etgender"/>
+
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="enter date of birth"
+            android:layout_margin="20dp"
+            android:textSize="20dp"
+            android:drawableLeft="@drawable/ic_baseline_date_range_24"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/etgender"
+            android:id="@+id/etdateofbirth"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="DONE"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/etdateofbirth"
+            android:onClick="@{Edithandler::onDoneClicked}"
+            android:layout_margin="30dp"/>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

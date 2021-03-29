@@ -4,11 +4,15 @@ import android.view.View
 import com.example.gymapplication.ui.home.HomeViewModel
 
 interface Handler {
-    fun onAddClicked(view: View)
-    //fun onheightClicked(customerDetailsMainViewModel: HomeViewModel)
+   fun onAddClicked(view: View)
 }
 
-interface DialogHtHandler
+interface LogHandler
 {
-    fun onBtnhtClicked(view: View)
+    fun onSaveClicked(view: View)
+//    fun onResetClicked(view: View)
+}
+interface HomeDetails
+{
+    fun onDoneClicked(view: View)
 }

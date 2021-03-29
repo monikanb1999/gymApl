@@ -1,4 +1,4 @@
-package com.example.gymapplication
+package com.example.gymapplication.ui.Activity
 
 import android.os.Bundle
 import com.google.android.material.bottomnavigation.BottomNavigationView
@@ -7,12 +7,15 @@ import androidx.navigation.findNavController
 import androidx.navigation.ui.AppBarConfiguration
 import androidx.navigation.ui.setupActionBarWithNavController
 import androidx.navigation.ui.setupWithNavController
+import com.example.gymapplication.R
+import com.example.gymapplication.databinding.ActivityHomeBinding
 
 class HomeActivity : AppCompatActivity() {
-
+lateinit var binding:ActivityHomeBinding
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_home)
+        binding= ActivityHomeBinding.inflate(layoutInflater)
+        setContentView(binding.root)
         val navView: BottomNavigationView = findViewById(R.id.nav_view)
 
         val navController = findNavController(R.id.nav_host_fragment)
@@ -20,7 +23,7 @@ class HomeActivity : AppCompatActivity() {
         // menu should be considered as top level destinations.
         val appBarConfiguration = AppBarConfiguration(
             setOf(
-                R.id.navigation_home, R.id.navigation_dashboard, R.id.navigation_notifications
+                    R.id.navigation_home, R.id.navigation_dashboard, R.id.navigation_notifications
             )
         )
         setupActionBarWithNavController(navController, appBarConfiguration)

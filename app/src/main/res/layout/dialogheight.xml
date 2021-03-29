@@ -5,9 +5,7 @@
 
     <data>
 
-        <variable
-            name="handler"
-            type="com.example.gymapplication.DialogHtHandler" />
+
     </data>
 
     <androidx.constraintlayout.widget.ConstraintLayout
