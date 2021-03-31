@@ -33,10 +33,10 @@ class LoginActivity : AppCompatActivity(),LogHandler {
     }
 
     override fun onSaveClicked(view: View) {
-        startActivity(Intent(this, HomeActivity::class.java))
-        finish()
+//        startActivity(Intent(this, HomeActivity::class.java))
+//        finish()
         if(!TextUtils.isEmpty(binding.etname.text.toString())) {
-            Log.d("save", "onSaveClicked: ")
+//            Log.d("save", "onSaveClicked: ")
             binding.topiclog.text.toString()
             binding.etname.text.toString()
             binding.etpassword.text.toString()

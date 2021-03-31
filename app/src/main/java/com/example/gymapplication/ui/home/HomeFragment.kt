@@ -18,28 +18,24 @@ import com.example.gymapplication.db.CustomerDetails
 import com.example.gymapplication.ui.Activity.EditableHomeActivity
 import com.example.gymapplication.ui.Activity.HomeActivity
 
-class HomeFragment : Fragment(),Handler{
+class HomeFragment : Fragment(),Handler {
 
     private lateinit var homeViewModel: HomeViewModel
     lateinit var binding: FragmentHomeBinding
-    val TAG="gyigygygkm"
+    val TAG = "gymapp"
 
     //lateinit var dialogheightBinding: DialogheightBinding
-   // private lateinit var adapter: GymRecyclerAdapter
-
+    // private lateinit var adapter: GymRecyclerAdapter
 
     override fun onCreateView(
-        inflater: LayoutInflater,
-        container: ViewGroup?,
-        savedInstanceState: Bundle?
+            inflater: LayoutInflater,
+            container: ViewGroup?,
+            savedInstanceState: Bundle?
     ): View? {
         homeViewModel =
-            ViewModelProvider(this).get(HomeViewModel::class.java)
-        binding =FragmentHomeBinding.inflate(layoutInflater)
+                ViewModelProvider(this).get(HomeViewModel::class.java)
+        binding = FragmentHomeBinding.inflate(layoutInflater)
         return binding.root
-
-
-
 //        adapter= GymRecyclerAdapter(this, this)
 //        binding.gymrecyclerview?.setHasFixedSize(true)
 //        val layoutManager: RecyclerView.LayoutManager = LinearLayoutManager(this)
@@ -49,13 +45,14 @@ class HomeFragment : Fragment(),Handler{
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        binding.handler1=this
+        binding.handler1 = this
 
+           //OBSERVER
         homeViewModel.gymdetaillist.observe(viewLifecycleOwner, Observer {
             if (it != null) {
-                binding.setVariable(BR.viewmodel,homeViewModel)
+                binding.setVariable(BR.viewmodel, homeViewModel)//used for all entity
                 Log.d(TAG, "onViewCreated:${it.Height} ")
-                Toast.makeText(context,it.Height,Toast.LENGTH_LONG).show()
+                Toast.makeText(context, it.Height, Toast.LENGTH_LONG).show()
             }
 
         })
@@ -63,9 +60,42 @@ class HomeFragment : Fragment(),Handler{
 
     override fun onAddClicked(view: View) {
         Log.d("sav", "onAddClicked: ")
-        Toast.makeText(context,"ufugiug",Toast.LENGTH_LONG).show()
+        Toast.makeText(context, "Clicked", Toast.LENGTH_LONG).show()
         startActivity(Intent(context, EditableHomeActivity::class.java))
     }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 //    override fun onAddClicked(view: View) {
 //
@@ -86,7 +116,7 @@ class HomeFragment : Fragment(),Handler{
 //            Toast.makeText(context, "not done process", Toast.LENGTH_LONG).show()
 //        }
 //    }
-    }
+
 
 
 

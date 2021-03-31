@@ -23,8 +23,8 @@ class SplashActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_splash)
 
-        if(sharedPreferences.getBoolean(STATUS_LOGIN, true)){
-            startActivity(Intent(this , LoginActivity::class.java))
+        if(sharedPreferences.getBoolean(STATUS_LOGIN, false)){
+            startActivity(Intent(this , HomeActivity::class.java))
             finish()
 //            val intent = Intent(this, ECGgraphActivity::class.java)
 //            intent.putExtra("result1", 3L)
@@ -35,7 +35,7 @@ class SplashActivity : AppCompatActivity() {
 //            finish()
         }
         else{
-            startActivity(Intent(this , HomeActivity::class.java))
+            startActivity(Intent(this , LoginActivity::class.java))
             finish()
         }
 

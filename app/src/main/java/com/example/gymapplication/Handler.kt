@@ -16,3 +16,7 @@ interface HomeDetails
 {
     fun onDoneClicked(view: View)
 }
+interface FoodDetails
+{
+    fun onFoodDetailsClicked(view: View)
+}

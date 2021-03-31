@@ -1,4 +1,4 @@
-package com.example.gymapplication.ui.home
+package com.example.gymapplication.ui.foods
 
 import android.app.Application
 import androidx.lifecycle.*
@@ -8,19 +8,17 @@ import com.example.gymapplication.db.Repository
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
 
-class HomeViewModel (application: Application): AndroidViewModel(application) {
+class FoodsViewModel (application: Application): AndroidViewModel(application){
+
     private val tableRespository: Repository
     //observer for recyclerview
-        var gymdetaillist: LiveData<CustomerDetails>
+    var gymfooddetaillist: LiveData<CustomerDetails>
     init {
         val dao= GymDatabase.getInstance(getApplication()).GymDao()
         tableRespository= Repository(dao)
-        gymdetaillist=tableRespository.getcustrepositorytable()
+        gymfooddetaillist=tableRespository.getcustrepositorytable()
     }
     fun inserttable(customerDetails: CustomerDetails)= viewModelScope.launch(Dispatchers.IO) {
         tableRespository.inserttablerepository(customerDetails)
     }
-//    fun updatetable(customerDetails: CustomerDetails)=viewModelScope.launch(Dispatchers.IO) {
-//        tableRespository.updatetablerepository(customerDetails)
-//    }
 }
