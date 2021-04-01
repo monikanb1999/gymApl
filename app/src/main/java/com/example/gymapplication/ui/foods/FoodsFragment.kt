@@ -16,7 +16,7 @@ import com.example.gymapplication.FoodDetails
 import com.example.gymapplication.R
 import com.example.gymapplication.databinding.FoodrecordBinding
 import com.example.gymapplication.databinding.FragmentNotificationsBinding
-import com.example.gymapplication.ui.Activity.FoodDetailsActivity
+import com.example.gymapplication.ui.Activity.FoodListActivity
 
 class FoodsFragment : Fragment(), FoodDetails {
 
@@ -72,7 +72,7 @@ class FoodsFragment : Fragment(), FoodDetails {
     }
 
     override fun onFoodDetailsClicked(view: View) {
-        val intent = Intent(context, FoodDetailsActivity::class.java)
+        val intent = Intent(context, FoodListActivity::class.java)
         startActivity(intent)
     }
 }

@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools">
 
     <data>
-<variable
+    <variable
     name="handler"
     type="com.example.gymapplication.LogHandler" />
     </data>
@@ -30,9 +30,9 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/etname"
-            android:layout_marginTop="200dp"
             android:hint="enter your name"
-            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/topiclog"
+            android:layout_marginTop="30dp"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintRight_toRightOf="parent" />
 
