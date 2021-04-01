@@ -18,3 +18,4 @@ interface GymDao {
 //    fun updatetable(customerDetails: CustomerDetails)
 
 }
+

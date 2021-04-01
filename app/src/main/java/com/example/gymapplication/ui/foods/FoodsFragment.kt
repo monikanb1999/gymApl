@@ -41,8 +41,6 @@ class FoodsFragment : Fragment(), FoodDetails {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-
-
         adapter = FoodRecyclerAdapter(context,this)
         binding.foodrecyclerview?.setHasFixedSize(true)
         val layoutManager: RecyclerView.LayoutManager = LinearLayoutManager(context)
