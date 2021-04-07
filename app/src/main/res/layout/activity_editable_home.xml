@@ -7,6 +7,9 @@
     <variable
     name="Edithandler"
     type="com.example.gymapplication.HomeDetails" />
+        <variable
+            name="rbhandler"
+            type="com.example.gymapplication.HomeDetails" />
     </data>
 
     <androidx.constraintlayout.widget.ConstraintLayout
@@ -60,22 +63,37 @@
             app:layout_constraintTop_toBottomOf="@+id/etweight"
             android:id="@+id/ettargetweight"/>
 
-        <EditText
+        <RadioGroup
+            xmlns:android="http://schemas.android.com/apk/res/android"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:hint="enter gender "
             android:layout_margin="20dp"
             android:textSize="20dp"
-            android:drawableLeft="@drawable/ic_baseline_person_24"
-            app:layout_constraintLeft_toLeftOf="parent"
+            android:id="@+id/etgender"
             app:layout_constraintTop_toBottomOf="@+id/ettargetweight"
-            android:id="@+id/etgender"/>
-
+            app:layout_constraintLeft_toLeftOf="parent">
+              <TextView
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:text="gender:"/>
+            <RadioButton
+                android:id="@+id/male"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/Male"
+                android:onClick="onRadioButtonClicked"/>
+            <RadioButton
+                android:id="@+id/female"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/Female"
+                android:onClick="onRadioButtonClicked"/>
+        </RadioGroup>
 
         <EditText
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:hint="enter date of birth"
+            android:hint="enter your age"
             android:layout_margin="20dp"
             android:textSize="20dp"
             android:drawableLeft="@drawable/ic_baseline_date_range_24"

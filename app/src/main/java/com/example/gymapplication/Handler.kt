@@ -15,6 +15,7 @@ interface LogHandler
 interface HomeDetails
 {
     fun onDoneClicked(view: View)
+    fun onRadioButtonClicked(view: View)
 }
 interface FoodDetails
 {

@@ -18,7 +18,7 @@ class FoodsViewModel (application: Application): AndroidViewModel(application){
         tableRespository= Repository(dao)
         gymfooddetaillist=tableRespository.getcustrepositorytable()
     }
-    fun inserttable(customerDetails: CustomerDetails)= viewModelScope.launch(Dispatchers.IO) {
+    fun insertfoodtable(customerDetails: CustomerDetails)= viewModelScope.launch(Dispatchers.IO) {
         tableRespository.inserttablerepository(customerDetails)
     }
 }

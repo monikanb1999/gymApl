@@ -1,13 +1,26 @@
 package com.example.gymapplication.ui.plans
 
-import androidx.lifecycle.LiveData
-import androidx.lifecycle.MutableLiveData
-import androidx.lifecycle.ViewModel
+import android.app.Application
+import androidx.lifecycle.*
+import com.example.gymapplication.db.CustomerDetails
+import com.example.gymapplication.db.GymDatabase
+import com.example.gymapplication.db.Repository
+import kotlinx.coroutines.Dispatchers
+import kotlinx.coroutines.launch
 
-class PlansViewModel : ViewModel() {
+class PlansViewModel(application: Application): AndroidViewModel(application) {
+    private val tableRespository: Repository
 
-    private val _text = MutableLiveData<String>().apply {
-        value = "This is dashboard Fragment"
+    //observer for recyclerview
+    var gymplandetaillist: LiveData<CustomerDetails>
+
+    init {
+        val dao = GymDatabase.getInstance(getApplication()).GymDao()
+        tableRespository = Repository(dao)
+        gymplandetaillist = tableRespository.getcustrepositorytable()
     }
-    val text: LiveData<String> = _text
+
+    fun inserttable(customerDetails: CustomerDetails) = viewModelScope.launch(Dispatchers.IO) {
+        tableRespository.inserttablerepository(customerDetails)
+    }
 }

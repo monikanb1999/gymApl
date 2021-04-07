@@ -12,14 +12,11 @@ import androidx.recyclerview.widget.RecyclerView
 import com.example.gymapplication.R
 import com.example.gymapplication.databinding.*
 import com.example.gymapplication.db.CustomerDetails
-import com.example.gymapplication.ui.foods.FoodsFragment
 import com.example.gymapplication.ui.foods.FoodsViewModel
-import java.util.Observer
 
 class FoodListActivity : AppCompatActivity() {
-
     lateinit var binding: ActivityFoodListBinding
-    private lateinit var adapter: RecyclerView
+    private lateinit var adapter: ListAdapter
 
 
     val viewmodel: FoodsViewModel by lazy {
@@ -31,19 +28,18 @@ class FoodListActivity : AppCompatActivity() {
         binding = ActivityFoodListBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        adapter = RecyclerView(this)
-        binding.recyclerView?.setHasFixedSize(true)
+        adapter = ListAdapter(this)
+        binding.recyclerView.setHasFixedSize(true)
         val layoutManager: RecyclerView.LayoutManager = LinearLayoutManager(this)
-        binding.recyclerView?.layoutManager = layoutManager
-//        binding.recyclerView?.adapter =Recycle
-        viewmodel.gymfooddetaillist.observe(this, androidx.lifecycle.Observer {
+        binding.recyclerView.layoutManager = layoutManager
+//        binding.recyclerView?.adapter =ListAdapter
+        viewmodel.gymfooddetaillist.observe(this, {
 
         })
     }
 
     private inner class ListAdapter internal constructor(
-            private val context: Context,
-            val fragment: FoodsFragment
+            context: Context
     ) :
             RecyclerView.Adapter<RecyclerView.ViewHolder>() {
         private val Breakfast = 1
@@ -54,10 +50,10 @@ class FoodListActivity : AppCompatActivity() {
         private val inflater: LayoutInflater = LayoutInflater.from(context)
         var gymfooddetaillist = emptyList<CustomerDetails>()
 
-        inner class ShowBreakFastViewHolder(rowitemBinding: RowitemBinding) : RecyclerView.ViewHolder(binding.root)
-        inner class ShowSnacksViewHolder(anotherrowitemBinding: AnotherrowitemBinding) : RecyclerView.ViewHolder(binding.root)
-        inner class ShowLunchViewHolder(lunchBinding: LunchBinding) : RecyclerView.ViewHolder(binding.root)
-        inner class ShowDinnerViewHolder(dinnerBinding: DinnerBinding) : RecyclerView.ViewHolder(binding.root)
+        inner class ShowBreakFastViewHolder(val rowitemBinding: RowitemBinding) : RecyclerView.ViewHolder(binding.root)
+        inner class ShowSnacksViewHolder(val anotherrowitemBinding: AnotherrowitemBinding) : RecyclerView.ViewHolder(binding.root)
+        inner class ShowLunchViewHolder(val lunchBinding: LunchBinding) : RecyclerView.ViewHolder(binding.root)
+        inner class ShowDinnerViewHolder(val dinnerBinding: DinnerBinding) : RecyclerView.ViewHolder(binding.root)
 
         override fun getItemViewType(position: Int): Int {
             when (gymfooddetaillist[position].Height) {
@@ -68,24 +64,30 @@ class FoodListActivity : AppCompatActivity() {
             }
             return super.getItemViewType(position)
         }
+
         override fun onBindViewHolder(holder: RecyclerView.ViewHolder, position: Int) {
-          if (getItemViewType(position)==Breakfast){
-              (holder as ShowBreakFastViewHolder)
-          }
-            if (getItemViewType(position)==Snacks){
+            if (getItemViewType(position) == Breakfast) {
+                (holder as ShowBreakFastViewHolder)
+                holder.rowitemBinding.executePendingBindings()
+            }
+            if (getItemViewType(position) == Snacks) {
                 (holder as ShowSnacksViewHolder)
+                holder.anotherrowitemBinding.executePendingBindings()
             }
-            if (getItemViewType(position)==Lunch){
+            if (getItemViewType(position) == Lunch) {
                 (holder as ShowLunchViewHolder)
+                holder.lunchBinding.executePendingBindings()
             }
-            if (getItemViewType(position)==Dinner){
+            if (getItemViewType(position) == Dinner) {
                 (holder as ShowDinnerViewHolder)
+                holder.dinnerBinding.executePendingBindings()
             }
         }
 
         override fun getItemCount(): Int {
             return gymfooddetaillist.size
         }
+
         override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): RecyclerView.ViewHolder {
             when (viewType) {
                 Breakfast -> {
@@ -100,14 +102,11 @@ class FoodListActivity : AppCompatActivity() {
                     val lunchBinding: LunchBinding = DataBindingUtil.inflate(inflater, R.layout.lunch, parent, false)
                     return ShowLunchViewHolder(lunchBinding)
                 }
-                Dinner -> {
+               else -> {
                     val dinnerBinding: DinnerBinding = DataBindingUtil.inflate(inflater, R.layout.dinner, parent, false)
                     return ShowDinnerViewHolder(dinnerBinding)
                 }
             }
-
         }
-
-
     }
 }

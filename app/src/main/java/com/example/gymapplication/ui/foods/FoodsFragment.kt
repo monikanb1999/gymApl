@@ -49,7 +49,7 @@ class FoodsFragment : Fragment(), FoodDetails {
 
     }
 
-    class FoodRecyclerAdapter(context: Context?, val foodsFragment: FoodsFragment) : RecyclerView.Adapter<FoodRecyclerAdapter.FoodViewHolder>() {
+    class FoodRecyclerAdapter(context: Context?, private val foodsFragment: FoodsFragment) : RecyclerView.Adapter<FoodRecyclerAdapter.FoodViewHolder>() {
 
         private val inflater: LayoutInflater = LayoutInflater.from(context)
         override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): FoodViewHolder {
