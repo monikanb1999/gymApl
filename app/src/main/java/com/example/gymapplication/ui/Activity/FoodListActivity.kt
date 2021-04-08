@@ -3,6 +3,7 @@ package com.example.gymapplication.ui.Activity
 import android.content.Context
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.util.Log
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.databinding.DataBindingUtil
@@ -16,7 +17,7 @@ import com.example.gymapplication.ui.foods.FoodsViewModel
 
 class FoodListActivity : AppCompatActivity() {
     lateinit var binding: ActivityFoodListBinding
-    private lateinit var adapter: ListAdapter
+    var daynumber:Int=0
 
 
     val viewmodel: FoodsViewModel by lazy {
@@ -27,40 +28,35 @@ class FoodListActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = ActivityFoodListBinding.inflate(layoutInflater)
         setContentView(binding.root)
-
-        adapter = ListAdapter(this)
+         daynumber= intent!!.extras?.get("position") as Int
+        Log.d("daynumber", "onCreate: $daynumber")
+        val adapter = ListAdapter1(this)
         binding.recyclerView.setHasFixedSize(true)
         val layoutManager: RecyclerView.LayoutManager = LinearLayoutManager(this)
         binding.recyclerView.layoutManager = layoutManager
-//        binding.recyclerView?.adapter =ListAdapter
+        binding.recyclerView?.adapter =adapter
         viewmodel.gymfooddetaillist.observe(this, {
 
         })
     }
 
-    private inner class ListAdapter internal constructor(
+     private inner class ListAdapter1 internal constructor(
             context: Context
-    ) :
-            RecyclerView.Adapter<RecyclerView.ViewHolder>() {
-        private val Breakfast = 1
-        private val Snacks = 2
-        private val Lunch = 3
-        private val Dinner = 4
+    ) : RecyclerView.Adapter<RecyclerView.ViewHolder>() {
+        private val Breakfast = 0
+        private val Snacks = 1
+        private val Lunch = 2
+        private val Dinner = 3
 
         private val inflater: LayoutInflater = LayoutInflater.from(context)
-        var gymfooddetaillist = emptyList<CustomerDetails>()
-
-        inner class ShowBreakFastViewHolder(val rowitemBinding: RowitemBinding) : RecyclerView.ViewHolder(binding.root)
-        inner class ShowSnacksViewHolder(val anotherrowitemBinding: AnotherrowitemBinding) : RecyclerView.ViewHolder(binding.root)
-        inner class ShowLunchViewHolder(val lunchBinding: LunchBinding) : RecyclerView.ViewHolder(binding.root)
-        inner class ShowDinnerViewHolder(val dinnerBinding: DinnerBinding) : RecyclerView.ViewHolder(binding.root)
+//        var gymfooddetaillist = emptyList<CustomerDetails>()
 
         override fun getItemViewType(position: Int): Int {
-            when (gymfooddetaillist[position].Height) {
-                "Breakfast" -> return Breakfast
-                "Snacks" -> return Snacks
-                "Lunch" -> return Lunch
-                "Dinner" -> return Dinner
+            when (position) {
+                0 -> return Breakfast
+                1 -> return Snacks
+                2 -> return Lunch
+                3 -> return Dinner
             }
             return super.getItemViewType(position)
         }
@@ -68,24 +64,51 @@ class FoodListActivity : AppCompatActivity() {
         override fun onBindViewHolder(holder: RecyclerView.ViewHolder, position: Int) {
             if (getItemViewType(position) == Breakfast) {
                 (holder as ShowBreakFastViewHolder)
+                when(daynumber){
+                    1->{
+                        holder.rowitemBinding.textView.text.toString()
+                        holder.rowitemBinding.rowCountTextView.text= resources.getString(R.string.brkfst1a)
+                        holder.rowitemBinding.rowCountTextView2.text= resources.getString(R.string.brkfst1b)
+
+                    }
+                }
                 holder.rowitemBinding.executePendingBindings()
             }
             if (getItemViewType(position) == Snacks) {
                 (holder as ShowSnacksViewHolder)
+                when(daynumber){
+                    1-> {
+                        holder.anotherrowitemBinding.textView.text.toString()
+                        holder.anotherrowitemBinding.snackrowCountTextView.text= resources.getString(R.string.Snack1a)
+                        holder.anotherrowitemBinding.snackrowCountTextView2.text= resources.getString(R.string.Snack1a)
+                    }
+                    }
                 holder.anotherrowitemBinding.executePendingBindings()
             }
             if (getItemViewType(position) == Lunch) {
                 (holder as ShowLunchViewHolder)
+                when(daynumber) {
+                    1 -> {
+                        holder.lunchBinding.textView.text= resources.getString(R.string.lunch1a)
+                        holder.lunchBinding.textView.text= resources.getString(R.string.lunch1b)
+                    }
+                }
                 holder.lunchBinding.executePendingBindings()
             }
             if (getItemViewType(position) == Dinner) {
                 (holder as ShowDinnerViewHolder)
+                when(daynumber) {
+                    1 -> {
+                        holder.dinnerBinding.textView.text= resources.getString(R.string.Dinner1a)
+                        holder.dinnerBinding.textView.text= resources.getString(R.string.Dinner1b)
+                    }
+                }
                 holder.dinnerBinding.executePendingBindings()
             }
         }
 
         override fun getItemCount(): Int {
-            return gymfooddetaillist.size
+            return 4
         }
 
         override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): RecyclerView.ViewHolder {

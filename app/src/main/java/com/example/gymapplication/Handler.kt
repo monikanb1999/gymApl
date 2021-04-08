@@ -19,5 +19,6 @@ interface HomeDetails
 }
 interface FoodDetails
 {
+    fun onFoodClick(daynumber:Int)
     fun onFoodDetailsClicked(view: View)
 }

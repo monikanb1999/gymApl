@@ -8,7 +8,7 @@
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="wrap_content">
 
         <ImageView
             android:id="@+id/imageView"
@@ -22,7 +22,7 @@
             android:src="@drawable/snack" />
 
         <TextView
-            android:id="@+id/textView"
+            android:id="@+id/snacktextView"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:text="Snacks"
@@ -32,20 +32,20 @@
             app:layout_constraintTop_toTopOf="parent" />
 
         <TextView
-            android:id="@+id/rowCountTextView"
+            android:id="@+id/snackrowCountTextView"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="1. 1 cup of tea or black coffee without sugar and milk"
+            android:text=""
             android:textColor="#201E1E"
             android:layout_margin="5dp"
             android:textAppearance="@style/TextAppearance.AppCompat.Small"
             app:layout_constraintTop_toBottomOf="@+id/imageView" />
 
         <TextView
-            android:id="@+id/rowCountTextView2"
+            android:id="@+id/snackrowCountTextView2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="2. Oatmeal porridge"
+            android:text=""
             android:textColor="#201E1E"
             android:layout_margin="5dp"
             android:textAppearance="@style/TextAppearance.AppCompat.Small"

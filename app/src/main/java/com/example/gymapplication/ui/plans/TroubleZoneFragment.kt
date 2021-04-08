@@ -25,5 +25,4 @@ class TroubleZoneFragment : Fragment() {
         return inflater.inflate(R.layout.fragment_trouble_zone, container, false)
     }
 
-
     }

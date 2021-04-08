@@ -3,21 +3,19 @@
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
     <data>
-      <variable
-          name="foodhandler"
-          type="com.example.gymapplication.FoodDetails" />
+
+
     </data>
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-
+        android:id="@+id/recyclerfood"
         android:layout_height="wrap_content">
         <androidx.cardview.widget.CardView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             app:cardElevation="10dp"
             app:cardCornerRadius="5dp"
-            android:onClick="@{foodhandler::onFoodDetailsClicked}"
             android:layout_margin="10dp"
             app:cardBackgroundColor="@color/white"
             app:cardMaxElevation="12dp"
@@ -29,7 +27,6 @@
             android:id="@+id/tvtext"
             android:textStyle="bold"
             android:padding="10dp"
-
             android:textAppearance="@style/TextAppearance.AppCompat.Large"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintLeft_toLeftOf="parent"

@@ -1,11 +1,15 @@
 package com.example.gymapplication.ui.foods
 
+import android.app.Application
 import android.content.Context
 import android.content.Intent
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Toast
+import androidx.core.content.ContextCompat
+import androidx.core.content.ContextCompat.startActivity
 import androidx.databinding.DataBindingUtil
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
@@ -35,12 +39,13 @@ class FoodsFragment : Fragment(), FoodDetails {
 
         binding = FragmentNotificationsBinding.inflate(layoutInflater)
         return binding.root
-//      binding.FoodHandler = this
+
 
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
+
         adapter = FoodRecyclerAdapter(context,this)
         binding.foodrecyclerview?.setHasFixedSize(true)
         val layoutManager: RecyclerView.LayoutManager = LinearLayoutManager(context)
@@ -49,7 +54,7 @@ class FoodsFragment : Fragment(), FoodDetails {
 
     }
 
-    class FoodRecyclerAdapter(context: Context?, private val foodsFragment: FoodsFragment) : RecyclerView.Adapter<FoodRecyclerAdapter.FoodViewHolder>() {
+     class FoodRecyclerAdapter(val context: Context?, private val foodsFragment: FoodsFragment) : RecyclerView.Adapter<FoodRecyclerAdapter.FoodViewHolder>() {
 
         private val inflater: LayoutInflater = LayoutInflater.from(context)
         override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): FoodViewHolder {
@@ -59,9 +64,16 @@ class FoodsFragment : Fragment(), FoodDetails {
 
         override fun onBindViewHolder(holder: FoodViewHolder, position: Int) {
             holder.binding.tvtext.text = "DAY" + "-" + (position + 1)
-            holder.binding.setVariable(BR.foodhandler,foodsFragment)
+//            holder.binding.setVariable(BR.foodhandler,foodsFragment)
+            holder.binding.recyclerfood.setOnClickListener{
+                Toast.makeText(context, "thifdj$position",Toast.LENGTH_LONG).show()
+                val intent=Intent(context,FoodListActivity::class.java)
+                intent.putExtra("position",position + 1)
+                context!!.startActivity(intent)
+            }
             holder.binding.executePendingBindings()
         }
+
 
         override fun getItemCount(): Int {
             return 30
@@ -71,10 +83,17 @@ class FoodsFragment : Fragment(), FoodDetails {
 
     }
 
-    override fun onFoodDetailsClicked(view: View) {
-        val intent = Intent(context, FoodListActivity::class.java)
-        startActivity(intent)
+    override fun onFoodClick(daynumber: Int) {
+
     }
+
+    override fun onFoodDetailsClicked(view: View) {
+//        val intent = Intent(context, FoodListActivity::class.java)
+//
+//        startActivity(intent)
+    }
+
+
 }
 
 
