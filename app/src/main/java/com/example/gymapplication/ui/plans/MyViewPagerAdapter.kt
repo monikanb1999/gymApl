@@ -12,12 +12,16 @@ class MyViewPagerAdapter(fragmentManager: Fragment) : FragmentStateAdapter(fragm
     }
 
     override fun createFragment(position: Int): Fragment {
-        return if(position == 0){
-            TrainingFragment()
-        }
-        else{
-            TroubleZoneFragment()
-        }
+        TODO("Not yet implemented")
     }
+
+//    override fun createFragment(position: Int): Fragment {
+//        return if(position == 0){
+//            TrainingFragment()
+//        }
+//        else{
+//            TroubleZoneFragment()
+//        }
+//    }
 
 }

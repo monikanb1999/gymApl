@@ -18,7 +18,6 @@ import com.example.gymapplication.ui.home.HomeViewModel
 import com.google.android.material.snackbar.Snackbar
 import kotlinx.android.synthetic.main.activity_editable_home.view.*
 import kotlinx.android.synthetic.main.fragment_home.*
-import kotlinx.android.synthetic.main.fragment_trouble_zone.view.*
 import kotlinx.android.synthetic.main.lunch.view.*
 import java.util.*
 

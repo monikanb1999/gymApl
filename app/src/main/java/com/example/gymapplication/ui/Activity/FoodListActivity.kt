@@ -78,9 +78,8 @@ class FoodListActivity : AppCompatActivity() {
                 (holder as ShowSnacksViewHolder)
                 when(daynumber){
                     1-> {
-                        holder.anotherrowitemBinding.textView.text.toString()
+                        holder.anotherrowitemBinding.snacktextView.text.toString()
                         holder.anotherrowitemBinding.snackrowCountTextView.text= resources.getString(R.string.Snack1a)
-                        holder.anotherrowitemBinding.snackrowCountTextView2.text= resources.getString(R.string.Snack1a)
                     }
                     }
                 holder.anotherrowitemBinding.executePendingBindings()
@@ -89,8 +88,9 @@ class FoodListActivity : AppCompatActivity() {
                 (holder as ShowLunchViewHolder)
                 when(daynumber) {
                     1 -> {
-                        holder.lunchBinding.textView.text= resources.getString(R.string.lunch1a)
-                        holder.lunchBinding.textView.text= resources.getString(R.string.lunch1b)
+                        holder.lunchBinding.lunchrowCountTextView.text= resources.getString(R.string.lunch1a)
+                        holder.lunchBinding.lunchtextView.text.toString()
+                        holder.lunchBinding.lunchrowCountTextView2.text= resources.getString(R.string.lunch1b)
                     }
                 }
                 holder.lunchBinding.executePendingBindings()
@@ -99,8 +99,9 @@ class FoodListActivity : AppCompatActivity() {
                 (holder as ShowDinnerViewHolder)
                 when(daynumber) {
                     1 -> {
-                        holder.dinnerBinding.textView.text= resources.getString(R.string.Dinner1a)
-                        holder.dinnerBinding.textView.text= resources.getString(R.string.Dinner1b)
+                        holder.dinnerBinding.dinnertextView.text.toString()
+                        holder.dinnerBinding.dinnerrowCountTextView.text= resources.getString(R.string.Dinner1a)
+                        holder.dinnerBinding.dinnerrowCountTextView2.text= resources.getString(R.string.Dinner1b)
                     }
                 }
                 holder.dinnerBinding.executePendingBindings()

@@ -10,45 +10,44 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
         <ImageView
-            android:id="@+id/imageView"
-            android:layout_width="35dp"
-            android:layout_height="34dp"
-            android:layout_marginTop="16dp"
-            android:layout_marginBottom="16dp"
-            android:layout_margin="5dp"
+            android:id="@+id/dinnerimageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintLeft_toLeftOf="parent"
-            app:srcCompat="@android:drawable/btn_star_big_on" />
+            android:src="@drawable/ic_baseline_food_bank_24" />
 
         <TextView
-            android:id="@+id/textView"
-            android:layout_width="wrap_content"
+            android:id="@+id/dinnertextView"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:text="Dinner"
             android:layout_margin="5dp"
             android:textAppearance="@style/TextAppearance.AppCompat.Large"
-            app:layout_constraintLeft_toRightOf="@+id/imageView"
+            app:layout_constraintLeft_toRightOf="@+id/dinnerimageView"
             app:layout_constraintTop_toTopOf="parent" />
 
         <TextView
-            android:id="@+id/rowCountTextView"
+            android:id="@+id/dinnerrowCountTextView"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text=""
             android:textColor="#201E1E"
             android:layout_margin="5dp"
+            android:padding="15dp"
+            android:text=""
             android:textAppearance="@style/TextAppearance.AppCompat.Small"
-            app:layout_constraintTop_toBottomOf="@+id/imageView" />
+            app:layout_constraintTop_toBottomOf="@+id/dinnerimageView" />
 
         <TextView
-            android:id="@+id/rowCountTextView2"
+            android:id="@+id/dinnerrowCountTextView2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text=""
             android:textColor="#201E1E"
+            android:padding="15dp"
             android:layout_margin="5dp"
+            android:text=""
             android:textAppearance="@style/TextAppearance.AppCompat.Small"
-            app:layout_constraintTop_toBottomOf="@+id/rowCountTextView" />
+            app:layout_constraintTop_toBottomOf="@+id/dinnerrowCountTextView" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </layout>
