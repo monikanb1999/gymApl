@@ -24,8 +24,6 @@ class HomeFragment : Fragment(),Handler {
     lateinit var binding: FragmentHomeBinding
     val TAG = "gymapp"
 
-    //lateinit var dialogheightBinding: DialogheightBinding
-    // private lateinit var adapter: GymRecyclerAdapter
 
     override fun onCreateView(
             inflater: LayoutInflater,
@@ -47,7 +45,7 @@ class HomeFragment : Fragment(),Handler {
         super.onViewCreated(view, savedInstanceState)
         binding.handler1 = this
 
-           //OBSERVER
+        //OBSERVER
         homeViewModel.gymdetaillist.observe(viewLifecycleOwner, Observer {
             if (it != null) {
                 binding.setVariable(BR.viewmodel, homeViewModel)//used for all entity
@@ -63,6 +61,8 @@ class HomeFragment : Fragment(),Handler {
         Toast.makeText(context, "Clicked", Toast.LENGTH_LONG).show()
         startActivity(Intent(context, EditableHomeActivity::class.java))
     }
+
+
 }
 
 

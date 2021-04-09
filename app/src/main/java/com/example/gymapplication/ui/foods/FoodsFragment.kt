@@ -66,7 +66,7 @@ class FoodsFragment : Fragment(), FoodDetails {
             holder.binding.tvtext.text = "DAY" + "-" + (position + 1)
 //            holder.binding.setVariable(BR.foodhandler,foodsFragment)
             holder.binding.recyclerfood.setOnClickListener{
-                Toast.makeText(context, "thifdj$position",Toast.LENGTH_LONG).show()
+//                Toast.makeText(context, "thifdj$position",Toast.LENGTH_LONG).show()
                 val intent=Intent(context,FoodListActivity::class.java)
                 intent.putExtra("position",position + 1)
                 context!!.startActivity(intent)

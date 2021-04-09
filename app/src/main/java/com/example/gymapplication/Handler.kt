@@ -5,6 +5,7 @@ import com.example.gymapplication.ui.home.HomeViewModel
 
 interface Handler {
    fun onAddClicked(view: View)
+
 }
 
 interface LogHandler
@@ -16,9 +17,15 @@ interface HomeDetails
 {
     fun onDoneClicked(view: View)
     fun onRadioButtonClicked(view: View)
+    fun onRadiofemaleButtonClicked(view: View)
+    fun onRadiomaleButtonClicked(view: View)
+    fun onRadiootherButtonClicked(view:View)
 }
+
 interface FoodDetails
+
 {
     fun onFoodClick(daynumber:Int)
     fun onFoodDetailsClicked(view: View)
+
 }

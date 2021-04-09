@@ -17,6 +17,7 @@
         <variable
             name="view"
             type="android.view.View" />
+
     </data>
 
     <androidx.constraintlayout.widget.ConstraintLayout
@@ -147,6 +148,7 @@
             app:layout_constraintTop_toBottomOf="@+id/ivgender"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintRight_toRightOf="@id/etdateofbirth"/>
+
 
 
     </androidx.constraintlayout.widget.ConstraintLayout>

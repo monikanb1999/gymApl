@@ -24,6 +24,8 @@ import java.util.*
 
 class EditableHomeActivity : AppCompatActivity(),HomeDetails {
     lateinit var binding: ActivityEditableHomeBinding
+    lateinit var gender :String
+
     val viewModel: HomeViewModel by lazy {
         ViewModelProvider(this).get(HomeViewModel::class.java)
     }
@@ -46,10 +48,11 @@ class EditableHomeActivity : AppCompatActivity(),HomeDetails {
                     0, binding.etheight.text.toString(),
                     binding.etweight.text.toString(),
                     binding.ettargetweight.text.toString(),
-                    binding.etgender.checkedRadioButtonId.toString(),
+                    gender,
                     binding.etdateofbirth.text.toString(),
             )
             viewModel.inserttable(table)
+            viewModel.updatetable(table)
             startActivity(Intent(this, HomeActivity::class.java))
             Toast.makeText(this, "done the process", Toast.LENGTH_LONG).show()
         } else {
@@ -77,5 +80,17 @@ class EditableHomeActivity : AppCompatActivity(),HomeDetails {
                         }
                 }
             }
+    }
+
+    override fun onRadiofemaleButtonClicked(view: View) {
+        gender="female"
+    }
+
+    override fun onRadiomaleButtonClicked(view: View) {
+       gender="male"
+    }
+
+    override fun onRadiootherButtonClicked(view: View) {
+        gender="others"
     }
 }

@@ -14,6 +14,9 @@ interface GymDao {
     @Query("select * from customerdetails")
     fun getcustomerdetails(): LiveData<CustomerDetails>//2
 
+    @Update
+    fun updatecustomerdetails(customerDetails: CustomerDetails)
+
 }
 
 //    @Update
