@@ -6,14 +6,10 @@ import androidx.viewpager2.adapter.FragmentStateAdapter
 import androidx.viewpager2.widget.ViewPager2
 import java.util.ArrayList
 
-class MyViewPagerAdapter(fragmentManager: Fragment) : FragmentStateAdapter(fragmentManager) {
-    override fun getItemCount(): Int {
-        return 2
-    }
-
-    override fun createFragment(position: Int): Fragment {
-        TODO("Not yet implemented")
-    }
+//class MyViewPagerAdapter(fragmentManager: Fragment) : FragmentStateAdapter(fragmentManager) {
+//    override fun getItemCount(): Int {
+//        return 2
+//    }
 
 //    override fun createFragment(position: Int): Fragment {
 //        return if(position == 0){
@@ -23,5 +19,7 @@ class MyViewPagerAdapter(fragmentManager: Fragment) : FragmentStateAdapter(fragm
 //            TroubleZoneFragment()
 //        }
 //    }
+//    }
 
-}
+
+

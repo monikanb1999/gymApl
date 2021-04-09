@@ -10,6 +10,7 @@ import androidx.lifecycle.ViewModelProvider
 import androidx.viewpager2.widget.ViewPager2
 import com.example.gymapplication.databinding.FragmentDashboardBinding
 import com.google.android.material.tabs.TabLayoutMediator
+import kotlinx.android.synthetic.main.fragment_dashboard.*
 import java.util.*
 
 class PlansFragment : Fragment() {
@@ -33,13 +34,18 @@ class PlansFragment : Fragment() {
 //        list.add("First Screen")
 //        list.add("Second Screen")
 
-        plansViewModel.text.observe(viewLifecycleOwner, Observer {
+        plansViewModel.gymplandetaillist.observe(viewLifecycleOwner, Observer {
 
         })
 
         val viewPagerAdapter = MyViewPagerAdapter(this)
         binding.pager.adapter = viewPagerAdapter
-        TabLayoutMediator(binding.tablayout,binding.pager) { _, _ -> }.attach()
+        TabLayoutMediator(tablayout,pager){ tab, position ->
+            when (position) {
+                0 -> { tab.text = "TRAINING"}
+                1 -> { tab.text = "TROUBLEZONE"}
+            }
+        }.attach()
 
     }
     }
