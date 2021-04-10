@@ -20,7 +20,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textStyle="bold"
-            android:layout_margin="30dp"
+            android:layout_margin="15dp"
             android:padding="10dp"
             android:id="@+id/tvprofile"
             app:layout_constraintTop_toTopOf="parent"
@@ -29,23 +29,32 @@
             app:layout_constraintRight_toRightOf="parent"
             android:text="MY PROFILE"/>
 
-
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="enter name"
+            android:layout_margin="15dp"
+            android:textSize="20dp"
+            android:drawableLeft="@drawable/ic_baseline_person_outline_24"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvprofile"
+            android:id="@+id/etname"/>
         <EditText
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
            android:hint="enter height"
-            android:layout_margin="20dp"
+            android:layout_margin="15dp"
             android:textSize="20dp"
             android:drawableLeft="@drawable/ic_height"
             app:layout_constraintLeft_toLeftOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/tvprofile"
+            app:layout_constraintTop_toBottomOf="@+id/etname"
             android:id="@+id/etheight"/>
 
         <EditText
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:hint="enter weight"
-            android:layout_margin="20dp"
+            android:layout_margin="15dp"
             android:textSize="20dp"
             android:drawableLeft="@drawable/ic_baseline_line_weight_24"
             app:layout_constraintLeft_toLeftOf="parent"
@@ -56,7 +65,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:hint="enter targeted weight"
-            android:layout_margin="20dp"
+            android:layout_margin="15dp"
             android:textSize="20dp"
             android:drawableLeft="@drawable/ic_baseline_point_of_sale_24"
             app:layout_constraintLeft_toLeftOf="parent"
@@ -67,7 +76,7 @@
             xmlns:android="http://schemas.android.com/apk/res/android"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_margin="20dp"
+            android:layout_margin="15dp"
             android:textSize="20dp"
             android:id="@+id/etgender"
             app:layout_constraintTop_toBottomOf="@+id/ettargetweight"
@@ -100,7 +109,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:hint="enter your age"
-            android:layout_margin="20dp"
+            android:layout_margin="15dp"
             android:textSize="20dp"
             android:drawableLeft="@drawable/ic_baseline_date_range_24"
             app:layout_constraintLeft_toLeftOf="parent"
@@ -114,7 +123,7 @@
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/etdateofbirth"
             android:onClick="@{Edithandler::onDoneClicked}"
-            android:layout_margin="30dp"/>
+            android:layout_margin="15dp"/>
 
 
     </androidx.constraintlayout.widget.ConstraintLayout>

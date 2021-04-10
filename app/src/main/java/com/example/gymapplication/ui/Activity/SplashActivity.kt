@@ -8,6 +8,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.example.gymapplication.ui.Activity.HomeActivity
 import com.example.gymapplication.R
+import com.example.gymapplication.ui.home.HomeFragment
 
 class SplashActivity : AppCompatActivity() {
    companion object{
