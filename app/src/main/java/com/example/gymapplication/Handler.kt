@@ -7,7 +7,10 @@ interface Handler {
    fun onAddClicked(view: View)
 
 }
-
+interface BeginHandler
+{
+    fun onBeginnerClicked(view: View)
+}
 interface LogHandler
 {
     fun onSaveClicked(view: View)

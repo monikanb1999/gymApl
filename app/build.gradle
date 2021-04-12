@@ -11,7 +11,7 @@ android {
 
     defaultConfig {
         applicationId "com.example.gymapplication"
-        minSdkVersion 16
+        minSdkVersion 17
         targetSdkVersion 30
         versionCode 1
         versionName "1.0"
@@ -40,7 +40,8 @@ android {
 
 dependencies {
     implementation 'com.google.android.gms:play-services-auth:19.0.0'
-
+    //gif
+    implementation 'pl.droidsonroids.gif:android-gif-drawable:1.2.19'
     // Room components
     implementation "androidx.room:room-ktx:$rootProject.roomVersion"
     implementation 'androidx.legacy:legacy-support-v4:1.0.0'

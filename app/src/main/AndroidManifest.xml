@@ -9,7 +9,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.GymApplication">
-        <activity android:name=".ui.plans.TroubleZoneFragment"></activity>
+        <activity android:name=".ui.Activity.PlanlistActivity"></activity>
+        <activity android:name=".ui.plans.BeginnerPlanActivity" />
+        <activity android:name=".ui.plans.TroubleZoneFragment" />
         <activity android:name=".ui.Activity.FoodListActivity" />
         <activity android:name=".ui.Activity.FoodDetailsActivity" />
         <activity android:name=".ui.Activity.EditableHomeActivity" />

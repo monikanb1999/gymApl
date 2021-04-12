@@ -4,7 +4,9 @@
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
     <data>
-
+            <variable
+                name="beginplan"
+                type="com.example.gymapplication.BeginHandler" />
 
     </data>
 
@@ -31,6 +33,7 @@
             android:layout_margin="10dp"
             app:cardBackgroundColor="#EEE0FF"
             app:cardMaxElevation="15dp"
+            android:onClick="@{beginplan::onBeginnerClicked}"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintRight_toRightOf="parent"
            app:layout_constraintBottom_toTopOf="@+id/inter">

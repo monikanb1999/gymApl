@@ -8,8 +8,11 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.example.gymapplication.ui.Activity.HomeActivity
 import com.example.gymapplication.R
+import com.example.gymapplication.databinding.ActivityEditableHomeBinding
+import com.example.gymapplication.databinding.ActivitySplashBinding
 
 class SplashActivity : AppCompatActivity() {
+    lateinit var binding: ActivitySplashBinding
    companion object{
        const val STATUS_LOGIN="login"
    }
@@ -21,8 +24,8 @@ class SplashActivity : AppCompatActivity() {
     }
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_splash)
-
+        binding = ActivitySplashBinding.inflate(layoutInflater)
+        setContentView(binding.root)
         if(sharedPreferences.getBoolean(STATUS_LOGIN, false)){
             startActivity(Intent(this , HomeActivity::class.java))
             finish()
