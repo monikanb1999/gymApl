@@ -9,10 +9,15 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.GymApplication">
-        <activity android:name=".ui.plans.TroubleZoneFragment"></activity>
+        <activity android:name=".ui.Activity.RegisterActivity"></activity>
+        <activity android:name=".ui.plans.TroubleZoneFragment" />
+        <activity android:name=".ui.Activity.PlanlistActivity"/>
+        <activity android:name=".ui.plans.BeginnerPlanActivity"/>
+        <activity android:name=".ui.Activity.FoodListActivity" />
+        <activity android:name=".ui.Activity.MainActivity"/>
+        <activity android:name=".ui.Activity.EditableHomeActivity" />
         <activity android:name=".ui.Activity.FoodListActivity" />
         <activity android:name=".ui.Activity.FoodDetailsActivity" />
-        <activity android:name=".ui.Activity.EditableHomeActivity" />
         <activity
             android:name=".ui.Activity.SplashActivity"
             android:theme="@style/Theme.GymApplication.SplashTheme">

@@ -11,6 +11,12 @@ interface BeginHandler
 {
     fun onBeginnerClicked(view: View)
 }
+interface RegisterHandler{
+    fun onRegisterSavedClicked(view: View)
+    fun onRegRadiomaleButtonClicked(view: View)
+    fun onRegRadiofemaleButtonClicked(view: View)
+    fun onRegRadiootherButtonClicked(view: View)
+}
 interface LogHandler
 {
     fun onSaveClicked(view: View)

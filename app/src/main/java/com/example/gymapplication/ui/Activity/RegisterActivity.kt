@@ -16,7 +16,7 @@ import com.example.gymapplication.db.CustomerDetails
 import com.example.gymapplication.ui.home.HomeFragment
 import com.example.gymapplication.ui.home.HomeViewModel
 
-class RegisterActivity : AppCompatActivity(), RegisterHandler {
+class RegisterActivity : AppCompatActivity(),RegisterHandler {
     lateinit var binding: ActivityRegisterBinding
     lateinit var gender :String
 

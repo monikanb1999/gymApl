@@ -26,6 +26,7 @@ class SplashActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = ActivitySplashBinding.inflate(layoutInflater)
         setContentView(binding.root)
+
         if(sharedPreferences.getBoolean(STATUS_LOGIN, false)){
             startActivity(Intent(this , HomeActivity::class.java))
             finish()
