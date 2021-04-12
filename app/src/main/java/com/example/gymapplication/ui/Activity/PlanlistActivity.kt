@@ -119,7 +119,7 @@ class PlanlistActivity : AppCompatActivity() {
                         holder.jumpingjacksBinding.JumpingJackstextView.text.toString()
                         holder.jumpingjacksBinding.JumpingJacksTextView.text= resources.getString(R.string.jj1a)
                         holder.jumpingjacksBinding.JumpingJacksTextView2.text= resources.getString(R.string.jj1b)
-                    }
+                    }//
                     12->{
                         holder.jumpingjacksBinding.JumpingJackstextView.text.toString()
                         holder.jumpingjacksBinding.JumpingJacksTextView.text= resources.getString(R.string.jj3a)
