@@ -41,17 +41,17 @@ class EditableHomeActivity : AppCompatActivity(),HomeDetails {
 
     override fun onDoneClicked(view: View) {
         Log.d("done", "onDoneClicked: ")
-        if (!TextUtils.isEmpty(binding.etheight.text.toString())) {
+        if (!TextUtils.isEmpty(binding.etname.text.toString())) {
 
             val table = CustomerDetails(
-                    0, binding.etheight.text.toString(),
+                    0,binding.etname.text.toString(),
+                    binding.etheight.text.toString(),
                     binding.etweight.text.toString(),
                     binding.ettargetweight.text.toString(),
                     gender,
                     binding.etdateofbirth.text.toString(),
             )
-            viewModel.inserttable(table)
-            viewModel.updatetable(table)
+           viewModel.updatetable(table)
             startActivity(Intent(this, HomeActivity::class.java))
             Toast.makeText(this, "done the process", Toast.LENGTH_LONG).show()
         } else {

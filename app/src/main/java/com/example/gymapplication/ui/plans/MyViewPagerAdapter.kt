@@ -20,6 +20,6 @@ class MyViewPagerAdapter(fragmentManager: Fragment) : FragmentStateAdapter(fragm
         }
     }
     }
-
+//
 
 

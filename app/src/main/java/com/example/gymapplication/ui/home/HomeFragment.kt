@@ -54,6 +54,8 @@ class HomeFragment : Fragment(),Handler {
             }
 
         })
+
+
     }
 
     override fun onAddClicked(view: View) {

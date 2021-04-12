@@ -10,6 +10,8 @@ data class CustomerDetails(
     @ColumnInfo(name = "id")
     @PrimaryKey(autoGenerate = true)
     val id: Int,
+    @ColumnInfo(name = "Name")
+    val Name: String,
     @ColumnInfo(name = "Height")
     val Height: String,
     @ColumnInfo(name = "Weight")

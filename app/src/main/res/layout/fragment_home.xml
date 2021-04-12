@@ -44,10 +44,28 @@
             android:layout_margin="20dp"
             android:onClick="@{handler1::onAddClicked}"
             android:src="@drawable/ic_baseline_edit_24"
-            app:layout_constraintBottom_toTopOf="@+id/ivheight"
+            app:layout_constraintBottom_toTopOf="@+id/ivname"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintRight_toRightOf="@+id/tvprofile" />
-
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Name"
+            android:layout_margin="20dp"
+            android:textSize="20dp"
+            android:drawableLeft="@drawable/ic_baseline_person_24"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvprofile"
+            android:id="@+id/etname"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/ivname"
+            android:layout_margin="30dp"
+            android:text="@{viewmodel.gymdetaillist.name}"
+            app:layout_constraintTop_toBottomOf="@+id/tvprofile"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintRight_toRightOf="@id/etheight"/>
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -56,7 +74,7 @@
             android:textSize="20dp"
             android:drawableLeft="@drawable/ic_height"
             app:layout_constraintLeft_toLeftOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/tvprofile"
+            app:layout_constraintTop_toBottomOf="@+id/etname"
             android:id="@+id/etheight"/>
         <TextView
             android:layout_width="wrap_content"
@@ -64,7 +82,7 @@
             android:id="@+id/ivheight"
             android:layout_margin="30dp"
             android:text="@{viewmodel.gymdetaillist.height}"
-            app:layout_constraintTop_toBottomOf="@+id/tvprofile"
+            app:layout_constraintTop_toBottomOf="@+id/ivname"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintRight_toRightOf="@id/etheight"/>
 

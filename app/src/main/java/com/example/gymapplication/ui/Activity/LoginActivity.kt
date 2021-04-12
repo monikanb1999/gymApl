@@ -42,7 +42,7 @@ class LoginActivity : AppCompatActivity(),LogHandler {
             binding.etpassword.text.toString()
 
             sharedPreferences.edit().putBoolean(SplashActivity.STATUS_LOGIN, true).apply()
-            startActivity(Intent(this, HomeActivity::class.java))
+            startActivity(Intent(this, RegisterActivity::class.java))
             finish()
         }
     else
