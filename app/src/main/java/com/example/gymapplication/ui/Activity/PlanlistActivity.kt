@@ -10,10 +10,13 @@ import androidx.databinding.DataBindingUtil
 import androidx.lifecycle.ViewModelProvider
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
+import com.bumptech.glide.Glide
 import com.example.gymapplication.R
 import com.example.gymapplication.databinding.*
 import com.example.gymapplication.ui.foods.FoodsViewModel
 import com.example.gymapplication.ui.plans.PlansViewModel
+import kotlinx.android.synthetic.main.jumpingjacks.view.*
+import kotlinx.android.synthetic.main.rowitem.view.*
 
 class PlanlistActivity : AppCompatActivity() {
     lateinit var binding: ActivityPlanlistBinding
@@ -35,6 +38,7 @@ class PlanlistActivity : AppCompatActivity() {
         val layoutManager: RecyclerView.LayoutManager = LinearLayoutManager(this)
         binding.plansrecyclerView.layoutManager = layoutManager
         binding.plansrecyclerView?.adapter =adapter
+
         viewmodel.gymplandetaillist.observe(this, {
 
         })
@@ -194,8 +198,7 @@ class PlanlistActivity : AppCompatActivity() {
                     }
                     27->{
                         holder.jumpingjacksBinding.JumpingJackstextView.text.toString()
-                        holder.jumpingjacksBinding.JumpingJacksTextView.text= resources.getString(R.string.brkfst27a)
-                        holder.jumpingjacksBinding.JumpingJacksTextView2.text= resources.getString(R.string.brkfst27b)
+                        holder.jumpingjacksBinding.JumpingJacksTextView.text= resources.getString(R.string.jj3a)
                     }
                     28->{
                         holder.jumpingjacksBinding.JumpingJackstextView.text.toString()

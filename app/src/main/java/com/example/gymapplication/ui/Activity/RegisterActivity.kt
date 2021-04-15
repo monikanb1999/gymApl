@@ -45,7 +45,7 @@ class RegisterActivity : AppCompatActivity(),RegisterHandler {
                 gender,
                 binding.regage.text.toString(),
             )
-            RegisterviewModel.inserttable(table)
+            RegisterviewModel.updatetable(table)
             startActivity(Intent(this, HomeActivity::class.java))
             Toast.makeText(this, "done the process", Toast.LENGTH_LONG).show()
         } else {
