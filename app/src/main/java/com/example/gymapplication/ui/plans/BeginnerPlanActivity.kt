@@ -41,7 +41,7 @@ class PlanRecyclerAdapter(val context: Context?, private val beginnerPlanBinding
     override fun onBindViewHolder(holder: PlanViewHolder, position: Int) {
         holder.binding.plantext.text = "DAY" + "-" + (position + 1)
 //            holder.binding.setVariable(BR.foodhandler,foodsFragment)
-        holder.binding.recyclerfood.setOnClickListener{
+        holder.binding.recyclerplan.setOnClickListener{
 //                Toast.makeText(context, "thifdj$position",Toast.LENGTH_LONG).show()
             val intent= Intent(context, PlanlistActivity::class.java)
             intent.putExtra("position",position + 1)
