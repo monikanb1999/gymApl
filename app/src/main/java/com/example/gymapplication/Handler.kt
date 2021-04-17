@@ -10,6 +10,8 @@ interface Handler {
 interface BeginHandler
 {
     fun onBeginnerClicked(view: View)
+    fun onIntermediateClicked(view: View)
+    fun onAdvancedClicked(view: View)
 }
 interface RegisterHandler{
     fun onRegisterSavedClicked(view: View)

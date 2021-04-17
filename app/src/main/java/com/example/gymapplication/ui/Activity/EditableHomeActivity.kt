@@ -48,19 +48,25 @@ class EditableHomeActivity : AppCompatActivity(),HomeDetails {
         })
     }
 
-//    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
-//        super.onViewCreated(view, savedInstanceState)
-//        binding.handler1 = this
-//
-//        //OBSERVER
-//        homeViewModel.gymdetaillist.observe(viewLifecycleOwner, Observer {
-//            if (it != null) {
-//                binding.setVariable(BR.viewmodel, homeViewModel)//used for all entity
-//                Log.d(TAG, "onViewCreated:${it.Height} ")
-//                Toast.makeText(context, it.Height, Toast.LENGTH_LONG).show()
-//            }
-//
-//        })
+
+    override fun onDoneClicked(view: View) {
+        Log.d("done", "onDoneClicked: ")
+        if (!TextUtils.isEmpty(binding.etname.text.toString())) {
+
+            val table = CustomerDetails(
+                    0,binding.etname.text.toString(), binding.etheight.text.toString(),
+                    binding.etweight.text.toString(), binding.ettargetweight.text.toString(),
+                    gender,
+                    binding.etdateofbirth.text.toString(),
+            )
+            editableViewModel.updatetable(table)
+            startActivity(Intent(this, HomeActivity::class.java))
+            Toast.makeText(this, "done the process", Toast.LENGTH_LONG).show()
+        } else {
+
+            Toast.makeText(this, "not done process", Toast.LENGTH_LONG).show()
+        }
+    }
     override fun onRadioButtonClicked(view: View) {
 
         if (view is RadioButton) {
@@ -92,23 +98,5 @@ class EditableHomeActivity : AppCompatActivity(),HomeDetails {
 
     override fun onRadiootherButtonClicked(view: View) {
         gender="others"
-    }
-    override fun onDoneClicked(view: View) {
-        Log.d("done", "onDoneClicked: ")
-        if (!TextUtils.isEmpty(binding.etname.text.toString())) {
-
-            val table = CustomerDetails(
-                    0,binding.etname.text.toString(), binding.etheight.text.toString(),
-                    binding.etweight.text.toString(), binding.ettargetweight.text.toString(),
-                    gender,
-                    binding.etdateofbirth.text.toString(),
-            )
-            editableViewModel.updatetable(table)
-            startActivity(Intent(this, HomeActivity::class.java))
-            Toast.makeText(this, "done the process", Toast.LENGTH_LONG).show()
-        } else {
-
-            Toast.makeText(this, "not done process", Toast.LENGTH_LONG).show()
-        }
     }
 }

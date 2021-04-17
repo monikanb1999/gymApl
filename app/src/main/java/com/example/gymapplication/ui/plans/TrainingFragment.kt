@@ -29,6 +29,8 @@ class TrainingFragment : Fragment(),BeginHandler {
         // Inflate the layout for this fragment
         binding = FragmentTrainingBinding.inflate(layoutInflater)
         binding.beginplan = this
+        binding.interplan =this
+        binding.advanceplan=this
         return binding.root
     }
 
@@ -36,5 +38,15 @@ class TrainingFragment : Fragment(),BeginHandler {
             val intent = Intent(context, BeginnerPlanActivity::class.java)
             startActivity(intent)
         }
+
+    override fun onIntermediateClicked(view: View) {
+        val intent = Intent(context, IntermediatePlanActivity::class.java)
+        startActivity(intent)
+    }
+
+    override fun onAdvancedClicked(view: View) {
+        val intent = Intent(context, AdvancedPlanActivity::class.java)
+        startActivity(intent)
+    }
 
 }
