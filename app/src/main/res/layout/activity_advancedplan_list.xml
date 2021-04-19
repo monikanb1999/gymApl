@@ -10,12 +10,12 @@
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:context=".ui.plans.IntermediatePlanActivity">
+        tools:context=".ui.plans.AdvancedplanListActivity">
 
         <androidx.recyclerview.widget.RecyclerView
             android:layout_width="match_parent"
             android:textColor="@color/white"
-            android:id="@+id/interrecyclerview"
+            android:id="@+id/advrecyclerview"
             android:layout_height="match_parent" />
 
 
