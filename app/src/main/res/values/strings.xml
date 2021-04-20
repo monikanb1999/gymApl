@@ -256,5 +256,6 @@ Now change the position of your hands for a front clap. </string>
     <string name="sq3b">Contract your abs as you move through the squat.
          Push straight back up, lifting your hips up and forward to lift toward starting position.</string>
     <string name="enter_the_password">enter the password</string>
-    <string name="enter_the_name">enter the name</string>
+    <string name="enter_the_name">enter the email-id</string>
+    <string name="enter_the_confirm_password">enter the confirm password</string>
 </resources>

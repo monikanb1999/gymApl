@@ -22,7 +22,7 @@ interface RegisterHandler{
 interface LogHandler
 {
     fun onSaveClicked(view: View)
-//    fun onResetClicked(view: View)
+    fun onSignUpClicked(view: View)
 }
 interface HomeDetails
 {

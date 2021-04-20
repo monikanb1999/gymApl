@@ -18,7 +18,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="LOGIN"
-            android:textColor="@color/black"
+            android:textColor="#170578"
             android:textStyle="bold"
             android:textSize="28dp"
             android:id="@+id/topiclog"
@@ -27,6 +27,14 @@
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintRight_toRightOf="parent"
             app:layout_constraintLeft_toLeftOf="parent"/>
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/image"
+            app:layout_constraintTop_toBottomOf="@+id/topiclog"
+            android:src="@drawable/gymmmm"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"/>
 
         <com.google.android.material.textfield.TextInputLayout
             android:id="@+id/filledTextField"
@@ -34,7 +42,8 @@
             android:layout_margin="25dp"
             android:layout_height="wrap_content"
             android:gravity="center"
-            app:layout_constraintTop_toBottomOf="@+id/topiclog"
+
+            app:layout_constraintTop_toBottomOf="@+id/image"
             android:hint="@string/enter_the_name"
             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
             <com.google.android.material.textfield.TextInputEditText
@@ -77,10 +86,10 @@
             android:id="@+id/login"
             android:ems="10"
             android:padding="20dp"
+            android:layout_margin="50dp"
             app:layout_constraintRight_toRightOf="parent"
             app:layout_constraintLeft_toLeftOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/filledTextField2"
             android:onClick="@{handler::onSaveClicked}"
             android:text="SAVE" />
         <TextView
@@ -89,10 +98,11 @@
             app:layout_constraintRight_toRightOf="parent"
             app:layout_constraintLeft_toLeftOf="parent"
             android:id="@+id/notregistered"
+            android:onClick="@{handler::onSignUpClicked}"
             android:text="if you not have an account??Register!!!"
             app:layout_constraintBottom_toBottomOf="parent"
-            android:textColor="@color/black"
-            android:layout_margin="20dp"/>
+            android:textColor="#170578"
+            android:layout_margin="25dp"/>
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </layout>
