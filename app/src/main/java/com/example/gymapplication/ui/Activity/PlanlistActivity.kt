@@ -223,155 +223,155 @@ class PlanlistActivity : AppCompatActivity() {
                 when(daynumber){
                     1-> {
                         holder.squatsBinding.squatstextView.text.toString()
-                        holder.squatsBinding.squatsCountTextView.text= resources.getString(R.string.Snack1a)
-                        holder.squatsBinding.squatsCountTextView2.text= resources.getString(R.string.Snack1a)
+                        holder.squatsBinding.squatsCountTextView.text= resources.getString(R.string.sq1a)
+                        holder.squatsBinding.squatsCountTextView2.text= resources.getString(R.string.sq1b)
                     }
                     2-> {
                         holder.squatsBinding.squatstextView.text.toString()
-                        holder.squatsBinding.squatsCountTextView.text= resources.getString(R.string.Snack1a)
-                        holder.squatsBinding.squatsCountTextView2.text= resources.getString(R.string.Snack1a)
+                        holder.squatsBinding.squatsCountTextView.text= resources.getString(R.string.sq2a)
+                        holder.squatsBinding.squatsCountTextView2.text= resources.getString(R.string.sq2b)
                     }
                     3-> {
                         holder.squatsBinding.squatstextView.text.toString()
-                        holder.squatsBinding.squatsCountTextView.text= resources.getString(R.string.Snack1a)
-                        holder.squatsBinding.squatsCountTextView2.text= resources.getString(R.string.Snack1a)
+                        holder.squatsBinding.squatsCountTextView.text= resources.getString(R.string.sq3a)
+                        holder.squatsBinding.squatsCountTextView2.text= resources.getString(R.string.sq3b)
                     }
                     4-> {
                         holder.squatsBinding.squatstextView.text.toString()
-                        holder.squatsBinding.squatsCountTextView.text= resources.getString(R.string.Snack1a)
-                        holder.squatsBinding.squatsCountTextView2.text= resources.getString(R.string.Snack1a)
+                        holder.squatsBinding.squatsCountTextView.text= resources.getString(R.string.sq4a)
+                        holder.squatsBinding.squatsCountTextView2.text= resources.getString(R.string.sq4b)
                     }
                     5-> {
                         holder.squatsBinding.squatstextView.text.toString()
-                        holder.squatsBinding.squatsCountTextView.text= resources.getString(R.string.Snack1a)
-                        holder.squatsBinding.squatsCountTextView2.text= resources.getString(R.string.Snack1a)
+                        holder.squatsBinding.squatsCountTextView.text= resources.getString(R.string.sq5a)
+                        holder.squatsBinding.squatsCountTextView2.text= resources.getString(R.string.sq5b)
                     }
                     6-> {
                         holder.squatsBinding.squatstextView.text.toString()
-                        holder.squatsBinding.squatsCountTextView.text= resources.getString(R.string.Snack1a)
-                        holder.squatsBinding.squatsCountTextView2.text= resources.getString(R.string.Snack1a)
+                        holder.squatsBinding.squatsCountTextView.text= resources.getString(R.string.sq6a)
+                        holder.squatsBinding.squatsCountTextView2.text= resources.getString(R.string.sq6b)
                     }
                     7-> {
                         holder.squatsBinding.squatstextView.text.toString()
-                        holder.squatsBinding.squatsCountTextView.text= resources.getString(R.string.Snack1a)
-                        holder.squatsBinding.squatsCountTextView2.text= resources.getString(R.string.Snack1a)
+                        holder.squatsBinding.squatsCountTextView.text= resources.getString(R.string.sq7a)
+                        holder.squatsBinding.squatsCountTextView2.text= resources.getString(R.string.sq7b)
                     }
                     8-> {
                         holder.squatsBinding.squatstextView.text.toString()
-                        holder.squatsBinding.squatsCountTextView.text= resources.getString(R.string.Snack1a)
-                        holder.squatsBinding.squatsCountTextView2.text= resources.getString(R.string.Snack1a)
+                        holder.squatsBinding.squatsCountTextView.text= resources.getString(R.string.sq2a)
+                        holder.squatsBinding.squatsCountTextView2.text= resources.getString(R.string.sq2b)
                     }
                     9-> {
                         holder.squatsBinding.squatstextView.text.toString()
-                        holder.squatsBinding.squatsCountTextView.text= resources.getString(R.string.Snack1a)
-                        holder.squatsBinding.squatsCountTextView2.text= resources.getString(R.string.Snack1a)
+                        holder.squatsBinding.squatsCountTextView.text= resources.getString(R.string.sq3a)
+                        holder.squatsBinding.squatsCountTextView2.text= resources.getString(R.string.sq3b)
                     }
                     10-> {
                         holder.squatsBinding.squatstextView.text.toString()
                         holder.squatsBinding.squatsCountTextView.text =
-                            resources.getString(R.string.Snack1a)
+                            resources.getString(R.string.sq7a)
                         holder.squatsBinding.squatsCountTextView2.text =
-                            resources.getString(R.string.Snack1a)
+                            resources.getString(R.string.sq7b)
                     }
                     11-> {
                         holder.squatsBinding.squatstextView.text.toString()
-                        holder.squatsBinding.squatsCountTextView.text= resources.getString(R.string.Snack1a)
-                        holder.squatsBinding.squatsCountTextView2.text= resources.getString(R.string.Snack1a)
+                        holder.squatsBinding.squatsCountTextView.text= resources.getString(R.string.sq3a)
+                        holder.squatsBinding.squatsCountTextView2.text= resources.getString(R.string.sq3b)
                     }
                     12-> {
                         holder.squatsBinding.squatstextView.text.toString()
-                        holder.squatsBinding.squatsCountTextView.text= resources.getString(R.string.Snack1a)
-                        holder.squatsBinding.squatsCountTextView2.text= resources.getString(R.string.Snack1a)
+                        holder.squatsBinding.squatsCountTextView.text= resources.getString(R.string.sq1a)
+                        holder.squatsBinding.squatsCountTextView2.text= resources.getString(R.string.sq1b)
                     }
                     13-> {
                         holder.squatsBinding.squatstextView.text.toString()
-                        holder.squatsBinding.squatsCountTextView.text= resources.getString(R.string.Snack1a)
-                        holder.squatsBinding.squatsCountTextView2.text= resources.getString(R.string.Snack1a)
+                        holder.squatsBinding.squatsCountTextView.text= resources.getString(R.string.sq3a)
+                        holder.squatsBinding.squatsCountTextView2.text= resources.getString(R.string.sq3b)
                     }
                     14-> {
                         holder.squatsBinding.squatstextView.text.toString()
-                        holder.squatsBinding.squatsCountTextView.text= resources.getString(R.string.Snack1a)
-                        holder.squatsBinding.squatsCountTextView2.text= resources.getString(R.string.Snack1a)
+                        holder.squatsBinding.squatsCountTextView.text= resources.getString(R.string.sq5a)
+                        holder.squatsBinding.squatsCountTextView2.text= resources.getString(R.string.sq5b)
                     }
                     15-> {
                         holder.squatsBinding.squatstextView.text.toString()
-                        holder.squatsBinding.squatsCountTextView.text= resources.getString(R.string.Snack1a)
-                        holder.squatsBinding.squatsCountTextView2.text= resources.getString(R.string.Snack1a)
+                        holder.squatsBinding.squatsCountTextView.text= resources.getString(R.string.sq6a)
+                        holder.squatsBinding.squatsCountTextView2.text= resources.getString(R.string.sq6b)
                     }
                     16-> {
                         holder.squatsBinding.squatstextView.text.toString()
-                        holder.squatsBinding.squatsCountTextView.text= resources.getString(R.string.Snack1a)
-                        holder.squatsBinding.squatsCountTextView2.text= resources.getString(R.string.Snack1a)
+                        holder.squatsBinding.squatsCountTextView.text= resources.getString(R.string.sq2a)
+                        holder.squatsBinding.squatsCountTextView2.text= resources.getString(R.string.sq2b)
                     }
                     17-> {
                         holder.squatsBinding.squatstextView.text.toString()
-                        holder.squatsBinding.squatsCountTextView.text= resources.getString(R.string.Snack1a)
-                        holder.squatsBinding.squatsCountTextView2.text= resources.getString(R.string.Snack1a)
+                        holder.squatsBinding.squatsCountTextView.text= resources.getString(R.string.sq4a)
+                        holder.squatsBinding.squatsCountTextView2.text= resources.getString(R.string.sq4b)
                     }
                     18-> {
                         holder.squatsBinding.squatstextView.text.toString()
-                        holder.squatsBinding.squatsCountTextView.text= resources.getString(R.string.Snack1a)
-                        holder.squatsBinding.squatsCountTextView2.text= resources.getString(R.string.Snack1a)
+                        holder.squatsBinding.squatsCountTextView.text= resources.getString(R.string.sq1a)
+                        holder.squatsBinding.squatsCountTextView2.text= resources.getString(R.string.sq1b)
                     }
                     19-> {
                         holder.squatsBinding.squatstextView.text.toString()
-                        holder.squatsBinding.squatsCountTextView.text= resources.getString(R.string.Snack1a)
-                        holder.squatsBinding.squatsCountTextView2.text= resources.getString(R.string.Snack1a)
+                        holder.squatsBinding.squatsCountTextView.text= resources.getString(R.string.sq5a)
+                        holder.squatsBinding.squatsCountTextView2.text= resources.getString(R.string.sq5b)
                     }
                     20-> {
                         holder.squatsBinding.squatstextView.text.toString()
-                        holder.squatsBinding.squatsCountTextView.text= resources.getString(R.string.Snack1a)
-                        holder.squatsBinding.squatsCountTextView2.text= resources.getString(R.string.Snack1a)
+                        holder.squatsBinding.squatsCountTextView.text= resources.getString(R.string.sq6a)
+                        holder.squatsBinding.squatsCountTextView2.text= resources.getString(R.string.sq6b)
                     }
                     21-> {
                         holder.squatsBinding.squatstextView.text.toString()
-                        holder.squatsBinding.squatsCountTextView.text= resources.getString(R.string.Snack1a)
-                        holder.squatsBinding.squatsCountTextView2.text= resources.getString(R.string.Snack1a)
+                        holder.squatsBinding.squatsCountTextView.text= resources.getString(R.string.sq3a)
+                        holder.squatsBinding.squatsCountTextView2.text= resources.getString(R.string.sq3b)
                     }
                     22-> {
                         holder.squatsBinding.squatstextView.text.toString()
-                        holder.squatsBinding.squatsCountTextView.text= resources.getString(R.string.Snack1a)
-                        holder.squatsBinding.squatsCountTextView2.text= resources.getString(R.string.Snack1a)
+                        holder.squatsBinding.squatsCountTextView.text= resources.getString(R.string.sq7a)
+                        holder.squatsBinding.squatsCountTextView2.text= resources.getString(R.string.sq7b)
                     }
                     23-> {
                         holder.squatsBinding.squatstextView.text.toString()
-                        holder.squatsBinding.squatsCountTextView.text= resources.getString(R.string.Snack1a)
-                        holder.squatsBinding.squatsCountTextView2.text= resources.getString(R.string.Snack1a)
+                        holder.squatsBinding.squatsCountTextView.text= resources.getString(R.string.sq3a)
+                        holder.squatsBinding.squatsCountTextView2.text= resources.getString(R.string.sq3b)
                     }
                     24-> {
                         holder.squatsBinding.squatstextView.text.toString()
-                        holder.squatsBinding.squatsCountTextView.text= resources.getString(R.string.Snack1a)
-                        holder.squatsBinding.squatsCountTextView2.text= resources.getString(R.string.Snack1a)
+                        holder.squatsBinding.squatsCountTextView.text= resources.getString(R.string.sq1a)
+                        holder.squatsBinding.squatsCountTextView2.text= resources.getString(R.string.sq1b)
                     }
                     25-> {
                         holder.squatsBinding.squatstextView.text.toString()
-                        holder.squatsBinding.squatsCountTextView.text= resources.getString(R.string.Snack1a)
-                        holder.squatsBinding.squatsCountTextView2.text= resources.getString(R.string.Snack1a)
+                        holder.squatsBinding.squatsCountTextView.text= resources.getString(R.string.sq2a)
+                        holder.squatsBinding.squatsCountTextView2.text= resources.getString(R.string.sq2b)
                     }
                     26-> {
                         holder.squatsBinding.squatstextView.text.toString()
-                        holder.squatsBinding.squatsCountTextView.text= resources.getString(R.string.Snack1a)
-                        holder.squatsBinding.squatsCountTextView2.text= resources.getString(R.string.Snack1a)
+                        holder.squatsBinding.squatsCountTextView.text= resources.getString(R.string.sq4a)
+                        holder.squatsBinding.squatsCountTextView2.text= resources.getString(R.string.sq4b)
                     }
                     27-> {
                         holder.squatsBinding.squatstextView.text.toString()
-                        holder.squatsBinding.squatsCountTextView.text= resources.getString(R.string.Snack1a)
-                        holder.squatsBinding.squatsCountTextView2.text= resources.getString(R.string.Snack1a)
+                        holder.squatsBinding.squatsCountTextView.text= resources.getString(R.string.sq1a)
+                        holder.squatsBinding.squatsCountTextView2.text= resources.getString(R.string.sq1b)
                     }
                     28-> {
                         holder.squatsBinding.squatstextView.text.toString()
-                        holder.squatsBinding.squatsCountTextView.text= resources.getString(R.string.Snack1a)
-                        holder.squatsBinding.squatsCountTextView2.text= resources.getString(R.string.Snack1a)
+                        holder.squatsBinding.squatsCountTextView.text= resources.getString(R.string.sq4a)
+                        holder.squatsBinding.squatsCountTextView2.text= resources.getString(R.string.sq4b)
                     }
                     29-> {
                         holder.squatsBinding.squatstextView.text.toString()
-                        holder.squatsBinding.squatsCountTextView.text= resources.getString(R.string.Snack1a)
-                        holder.squatsBinding.squatsCountTextView2.text= resources.getString(R.string.Snack1a)
+                        holder.squatsBinding.squatsCountTextView.text= resources.getString(R.string.sq6a)
+                        holder.squatsBinding.squatsCountTextView2.text= resources.getString(R.string.sq6b)
                     }
                     30-> {
                         holder.squatsBinding.squatstextView.text.toString()
-                        holder.squatsBinding.squatsCountTextView.text= resources.getString(R.string.Snack1a)
-                        holder.squatsBinding.squatsCountTextView2.text= resources.getString(R.string.Snack1a)
+                        holder.squatsBinding.squatsCountTextView.text= resources.getString(R.string.sq7a)
+                        holder.squatsBinding.squatsCountTextView2.text= resources.getString(R.string.sq7b)
                     }
                 }
                 holder.squatsBinding.executePendingBindings()
@@ -381,153 +381,153 @@ class PlanlistActivity : AppCompatActivity() {
                 when(daynumber) {
                     1 -> {
                         holder.pushupsBinding.pushupstextView.text.toString()
-                        holder.pushupsBinding.pushupsCountTextView.text= resources.getString(R.string.lunch1a)
-                        holder.pushupsBinding.pushupsCountTextView2.text= resources.getString(R.string.lunch1b)
+                        holder.pushupsBinding.pushupsCountTextView.text= resources.getString(R.string.pu1a)
+                        holder.pushupsBinding.pushupsCountTextView2.text= resources.getString(R.string.pu1b)
                     }
                     2 -> {
                         holder.pushupsBinding.pushupstextView.text.toString()
-                        holder.pushupsBinding.pushupsCountTextView.text= resources.getString(R.string.lunch1a)
-                        holder.pushupsBinding.pushupsCountTextView2.text= resources.getString(R.string.lunch1b)
+                        holder.pushupsBinding.pushupsCountTextView.text= resources.getString(R.string.pu2a)
+                        holder.pushupsBinding.pushupsCountTextView2.text= resources.getString(R.string.pu2b)
                     }
                     3 -> {
                         holder.pushupsBinding.pushupstextView.text.toString()
-                        holder.pushupsBinding.pushupsCountTextView.text= resources.getString(R.string.lunch1a)
-                        holder.pushupsBinding.pushupsCountTextView2.text= resources.getString(R.string.lunch1b)
+                        holder.pushupsBinding.pushupsCountTextView.text= resources.getString(R.string.pu3a)
+                        holder.pushupsBinding.pushupsCountTextView2.text= resources.getString(R.string.pu3b)
                     }
                     4 -> {
                         holder.pushupsBinding.pushupstextView.text.toString()
-                        holder.pushupsBinding.pushupsCountTextView.text= resources.getString(R.string.lunch1a)
-                        holder.pushupsBinding.pushupsCountTextView2.text= resources.getString(R.string.lunch1b)
+                        holder.pushupsBinding.pushupsCountTextView.text= resources.getString(R.string.pu4a)
+                        holder.pushupsBinding.pushupsCountTextView2.text= resources.getString(R.string.pu4b)
                     }
                     5 -> {
                         holder.pushupsBinding.pushupstextView.text.toString()
-                        holder.pushupsBinding.pushupsCountTextView.text= resources.getString(R.string.lunch1a)
-                        holder.pushupsBinding.pushupsCountTextView2.text= resources.getString(R.string.lunch1b)
+                        holder.pushupsBinding.pushupsCountTextView.text= resources.getString(R.string.pu5a)
+                        holder.pushupsBinding.pushupsCountTextView2.text= resources.getString(R.string.pu5b)
                     }
                     6 -> {
                         holder.pushupsBinding.pushupstextView.text.toString()
-                        holder.pushupsBinding.pushupsCountTextView.text= resources.getString(R.string.lunch1a)
-                        holder.pushupsBinding.pushupsCountTextView2.text= resources.getString(R.string.lunch1b)
+                        holder.pushupsBinding.pushupsCountTextView.text= resources.getString(R.string.pu1a)
+                        holder.pushupsBinding.pushupsCountTextView2.text= resources.getString(R.string.pu1b)
                     }
                     7 -> {
                         holder.pushupsBinding.pushupstextView.text.toString()
-                        holder.pushupsBinding.pushupsCountTextView.text= resources.getString(R.string.lunch1a)
-                        holder.pushupsBinding.pushupsCountTextView2.text= resources.getString(R.string.lunch1b)
+                        holder.pushupsBinding.pushupsCountTextView.text= resources.getString(R.string.pu2a)
+                        holder.pushupsBinding.pushupsCountTextView2.text= resources.getString(R.string.pu2b)
                     }
                     8 -> {
                         holder.pushupsBinding.pushupstextView.text.toString()
-                        holder.pushupsBinding.pushupsCountTextView.text= resources.getString(R.string.lunch1a)
-                        holder.pushupsBinding.pushupsCountTextView2.text= resources.getString(R.string.lunch1b)
+                        holder.pushupsBinding.pushupsCountTextView.text= resources.getString(R.string.pu3a)
+                        holder.pushupsBinding.pushupsCountTextView2.text= resources.getString(R.string.pu3b)
                     }
                     9 -> {
                         holder.pushupsBinding.pushupstextView.text.toString()
-                        holder.pushupsBinding.pushupsCountTextView.text= resources.getString(R.string.lunch1a)
-                        holder.pushupsBinding.pushupsCountTextView2.text= resources.getString(R.string.lunch1b)
+                        holder.pushupsBinding.pushupsCountTextView.text= resources.getString(R.string.pu6a)
+                        holder.pushupsBinding.pushupsCountTextView2.text= resources.getString(R.string.pu6b)
                     }
                     10 -> {
                         holder.pushupsBinding.pushupstextView.text.toString()
-                        holder.pushupsBinding.pushupsCountTextView.text= resources.getString(R.string.lunch1a)
-                        holder.pushupsBinding.pushupsCountTextView2.text= resources.getString(R.string.lunch1b)
+                        holder.pushupsBinding.pushupsCountTextView.text= resources.getString(R.string.pu5a)
+                        holder.pushupsBinding.pushupsCountTextView2.text= resources.getString(R.string.pu5b)
                     }
                     11 -> {
                         holder.pushupsBinding.pushupstextView.text.toString()
-                        holder.pushupsBinding.pushupsCountTextView.text= resources.getString(R.string.lunch1a)
-                        holder.pushupsBinding.pushupsCountTextView2.text= resources.getString(R.string.lunch1b)
+                        holder.pushupsBinding.pushupsCountTextView.text= resources.getString(R.string.pu4a)
+                        holder.pushupsBinding.pushupsCountTextView2.text= resources.getString(R.string.pu4b)
                     }
                     12 -> {
                         holder.pushupsBinding.pushupstextView.text.toString()
-                        holder.pushupsBinding.pushupsCountTextView.text= resources.getString(R.string.lunch1a)
-                        holder.pushupsBinding.pushupsCountTextView2.text= resources.getString(R.string.lunch1b)
+                        holder.pushupsBinding.pushupsCountTextView.text= resources.getString(R.string.pu3a)
+                        holder.pushupsBinding.pushupsCountTextView2.text= resources.getString(R.string.pu3b)
                     }
                     13 -> {
                         holder.pushupsBinding.pushupstextView.text.toString()
-                        holder.pushupsBinding.pushupsCountTextView.text= resources.getString(R.string.lunch1a)
-                        holder.pushupsBinding.pushupsCountTextView2.text= resources.getString(R.string.lunch1b)
+                        holder.pushupsBinding.pushupsCountTextView.text= resources.getString(R.string.pu2a)
+                        holder.pushupsBinding.pushupsCountTextView2.text= resources.getString(R.string.pu2b)
                     }
                     14 -> {
                         holder.pushupsBinding.pushupstextView.text.toString()
-                        holder.pushupsBinding.pushupsCountTextView.text= resources.getString(R.string.lunch1a)
-                        holder.pushupsBinding.pushupsCountTextView2.text= resources.getString(R.string.lunch1b)
+                        holder.pushupsBinding.pushupsCountTextView.text= resources.getString(R.string.pu1a)
+                        holder.pushupsBinding.pushupsCountTextView2.text= resources.getString(R.string.pu1b)
                     }
                     15 -> {
                         holder.pushupsBinding.pushupstextView.text.toString()
-                        holder.pushupsBinding.pushupsCountTextView.text= resources.getString(R.string.lunch1a)
-                        holder.pushupsBinding.pushupsCountTextView2.text= resources.getString(R.string.lunch1b)
+                        holder.pushupsBinding.pushupsCountTextView.text= resources.getString(R.string.pu5a)
+                        holder.pushupsBinding.pushupsCountTextView2.text= resources.getString(R.string.pu5b)
                     }
                     16-> {
                         holder.pushupsBinding.pushupstextView.text.toString()
-                        holder.pushupsBinding.pushupsCountTextView.text= resources.getString(R.string.lunch1a)
-                        holder.pushupsBinding.pushupsCountTextView2.text= resources.getString(R.string.lunch1b)
+                        holder.pushupsBinding.pushupsCountTextView.text= resources.getString(R.string.pu3a)
+                        holder.pushupsBinding.pushupsCountTextView2.text= resources.getString(R.string.pu3b)
                     }
                     17 -> {
                         holder.pushupsBinding.pushupstextView.text.toString()
-                        holder.pushupsBinding.pushupsCountTextView.text= resources.getString(R.string.lunch1a)
-                        holder.pushupsBinding.pushupsCountTextView2.text= resources.getString(R.string.lunch1b)
+                        holder.pushupsBinding.pushupsCountTextView.text= resources.getString(R.string.pu6a)
+                        holder.pushupsBinding.pushupsCountTextView2.text= resources.getString(R.string.pu6b)
                     }
                     18 -> {
                         holder.pushupsBinding.pushupstextView.text.toString()
-                        holder.pushupsBinding.pushupsCountTextView.text= resources.getString(R.string.lunch1a)
-                        holder.pushupsBinding.pushupsCountTextView2.text= resources.getString(R.string.lunch1b)
+                        holder.pushupsBinding.pushupsCountTextView.text= resources.getString(R.string.pu2a)
+                        holder.pushupsBinding.pushupsCountTextView2.text= resources.getString(R.string.pu2b)
                     }
                     19 -> {
                         holder.pushupsBinding.pushupstextView.text.toString()
-                        holder.pushupsBinding.pushupsCountTextView.text= resources.getString(R.string.lunch1a)
-                        holder.pushupsBinding.pushupsCountTextView2.text= resources.getString(R.string.lunch1b)
+                        holder.pushupsBinding.pushupsCountTextView.text= resources.getString(R.string.pu4a)
+                        holder.pushupsBinding.pushupsCountTextView2.text= resources.getString(R.string.pu4b)
                     }
                     20 -> {
                         holder.pushupsBinding.pushupstextView.text.toString()
-                        holder.pushupsBinding.pushupsCountTextView.text= resources.getString(R.string.lunch1a)
-                        holder.pushupsBinding.pushupsCountTextView2.text= resources.getString(R.string.lunch1b)
+                        holder.pushupsBinding.pushupsCountTextView.text= resources.getString(R.string.pu6a)
+                        holder.pushupsBinding.pushupsCountTextView2.text= resources.getString(R.string.pu6b)
                     }
                     21 -> {
                         holder.pushupsBinding.pushupstextView.text.toString()
-                        holder.pushupsBinding.pushupsCountTextView.text= resources.getString(R.string.lunch1a)
-                        holder.pushupsBinding.pushupsCountTextView2.text= resources.getString(R.string.lunch1b)
+                        holder.pushupsBinding.pushupsCountTextView.text= resources.getString(R.string.pu1a)
+                        holder.pushupsBinding.pushupsCountTextView2.text= resources.getString(R.string.pu1b)
                     }
                     22 -> {
                         holder.pushupsBinding.pushupstextView.text.toString()
-                        holder.pushupsBinding.pushupsCountTextView.text= resources.getString(R.string.lunch1a)
-                        holder.pushupsBinding.pushupsCountTextView2.text= resources.getString(R.string.lunch1b)
+                        holder.pushupsBinding.pushupsCountTextView.text= resources.getString(R.string.pu3a)
+                        holder.pushupsBinding.pushupsCountTextView2.text= resources.getString(R.string.pu3b)
                     }
                     23 -> {
                         holder.pushupsBinding.pushupstextView.text.toString()
-                        holder.pushupsBinding.pushupsCountTextView.text= resources.getString(R.string.lunch1a)
-                        holder.pushupsBinding.pushupsCountTextView2.text= resources.getString(R.string.lunch1b)
+                        holder.pushupsBinding.pushupsCountTextView.text= resources.getString(R.string.pu1a)
+                        holder.pushupsBinding.pushupsCountTextView2.text= resources.getString(R.string.pu1b)
                     }
                     24 -> {
                         holder.pushupsBinding.pushupstextView.text.toString()
-                        holder.pushupsBinding.pushupsCountTextView.text= resources.getString(R.string.lunch1a)
-                        holder.pushupsBinding.pushupsCountTextView2.text= resources.getString(R.string.lunch1b)
+                        holder.pushupsBinding.pushupsCountTextView.text= resources.getString(R.string.pu4a)
+                        holder.pushupsBinding.pushupsCountTextView2.text= resources.getString(R.string.pu4b)
                     }
                     25 -> {
                         holder.pushupsBinding.pushupstextView.text.toString()
-                        holder.pushupsBinding.pushupsCountTextView.text= resources.getString(R.string.lunch1a)
-                        holder.pushupsBinding.pushupsCountTextView2.text= resources.getString(R.string.lunch1b)
+                        holder.pushupsBinding.pushupsCountTextView.text= resources.getString(R.string.pu3a)
+                        holder.pushupsBinding.pushupsCountTextView2.text= resources.getString(R.string.pu3b)
                     }
                     26 -> {
                         holder.pushupsBinding.pushupstextView.text.toString()
-                        holder.pushupsBinding.pushupsCountTextView.text= resources.getString(R.string.lunch1a)
-                        holder.pushupsBinding.pushupsCountTextView2.text= resources.getString(R.string.lunch1b)
+                        holder.pushupsBinding.pushupsCountTextView.text= resources.getString(R.string.pu2a)
+                        holder.pushupsBinding.pushupsCountTextView2.text= resources.getString(R.string.pu2b)
                     }
                     27 -> {
                         holder.pushupsBinding.pushupstextView.text.toString()
-                        holder.pushupsBinding.pushupsCountTextView.text= resources.getString(R.string.lunch1a)
-                        holder.pushupsBinding.pushupsCountTextView2.text= resources.getString(R.string.lunch1b)
+                        holder.pushupsBinding.pushupsCountTextView.text= resources.getString(R.string.pu1a)
+                        holder.pushupsBinding.pushupsCountTextView2.text= resources.getString(R.string.pu1b)
                     }
                     28 -> {
                         holder.pushupsBinding.pushupstextView.text.toString()
-                        holder.pushupsBinding.pushupsCountTextView.text= resources.getString(R.string.lunch1a)
-                        holder.pushupsBinding.pushupsCountTextView2.text= resources.getString(R.string.lunch1b)
+                        holder.pushupsBinding.pushupsCountTextView.text= resources.getString(R.string.pu4a)
+                        holder.pushupsBinding.pushupsCountTextView2.text= resources.getString(R.string.pu4b)
                     }
                     29 -> {
                         holder.pushupsBinding.pushupstextView.text.toString()
-                        holder.pushupsBinding.pushupsCountTextView.text= resources.getString(R.string.lunch1a)
-                        holder.pushupsBinding.pushupsCountTextView2.text= resources.getString(R.string.lunch1b)
+                        holder.pushupsBinding.pushupsCountTextView.text= resources.getString(R.string.pu1a)
+                        holder.pushupsBinding.pushupsCountTextView2.text= resources.getString(R.string.pu1b)
                     }
                     30 -> {
                         holder.pushupsBinding.pushupstextView.text.toString()
-                        holder.pushupsBinding.pushupsCountTextView.text= resources.getString(R.string.lunch1a)
-                        holder.pushupsBinding.pushupsCountTextView2.text= resources.getString(R.string.lunch1b)
+                        holder.pushupsBinding.pushupsCountTextView.text= resources.getString(R.string.pu3a)
+                        holder.pushupsBinding.pushupsCountTextView2.text= resources.getString(R.string.pu3b)
                     }
 
                 }
@@ -538,132 +538,127 @@ class PlanlistActivity : AppCompatActivity() {
                 when(daynumber) {
                     1 -> {
                         holder.legraisesBinding.lrtextView.text.toString()
-                        holder.legraisesBinding.lrCountTextView.text= resources.getString(R.string.Dinner1a)
-                        holder.legraisesBinding.lrCountTextView2.text= resources.getString(R.string.Dinner1b)
+                        holder.legraisesBinding.lrCountTextView.text= resources.getString(R.string.lr1a)
+                        holder.legraisesBinding.lrCountTextView2.text= resources.getString(R.string.lr1b)
                     }
                     2 -> {
                         holder.legraisesBinding.lrtextView.text.toString()
-                        holder.legraisesBinding.lrCountTextView.text= resources.getString(R.string.Dinner1a)
-                        holder.legraisesBinding.lrCountTextView2.text= resources.getString(R.string.Dinner1b)
+                        holder.legraisesBinding.lrCountTextView.text= resources.getString(R.string.lr2a)
                     }
                     3 -> {
                         holder.legraisesBinding.lrtextView.text.toString()
-                        holder.legraisesBinding.lrCountTextView.text= resources.getString(R.string.Dinner1a)
-                        holder.legraisesBinding.lrCountTextView2.text= resources.getString(R.string.Dinner1b)
+                        holder.legraisesBinding.lrCountTextView.text= resources.getString(R.string.lr3a)
+                        holder.legraisesBinding.lrCountTextView2.text= resources.getString(R.string.lr3b)
                     }
                     4 -> {
                         holder.legraisesBinding.lrtextView.text.toString()
-                        holder.legraisesBinding.lrCountTextView.text= resources.getString(R.string.Dinner1a)
-                        holder.legraisesBinding.lrCountTextView2.text= resources.getString(R.string.Dinner1b)
+                        holder.legraisesBinding.lrCountTextView.text= resources.getString(R.string.lr5a)
+                        holder.legraisesBinding.lrCountTextView2.text= resources.getString(R.string.lr5b)
                     }
                     5 -> {
                         holder.legraisesBinding.lrtextView.text.toString()
-                        holder.legraisesBinding.lrCountTextView.text= resources.getString(R.string.Dinner1a)
-                        holder.legraisesBinding.lrCountTextView2.text= resources.getString(R.string.Dinner1b)
+                        holder.legraisesBinding.lrCountTextView.text= resources.getString(R.string.lr2a)
                     }  6 -> {
                     holder.legraisesBinding.lrtextView.text.toString()
-                    holder.legraisesBinding.lrCountTextView.text= resources.getString(R.string.Dinner1a)
-                    holder.legraisesBinding.lrCountTextView2.text= resources.getString(R.string.Dinner1b)
+                    holder.legraisesBinding.lrCountTextView.text= resources.getString(R.string.lr6a)
+                    holder.legraisesBinding.lrCountTextView2.text= resources.getString(R.string.lr6b)
                 }  7 -> {
                     holder.legraisesBinding.lrtextView.text.toString()
-                    holder.legraisesBinding.lrCountTextView.text= resources.getString(R.string.Dinner1a)
-                    holder.legraisesBinding.lrCountTextView2.text= resources.getString(R.string.Dinner1b)
+                    holder.legraisesBinding.lrCountTextView.text= resources.getString(R.string.lr1a)
+                    holder.legraisesBinding.lrCountTextView2.text= resources.getString(R.string.lr1b)
                 }  8 -> {
                     holder.legraisesBinding.lrtextView.text.toString()
-                    holder.legraisesBinding.lrCountTextView.text= resources.getString(R.string.Dinner1a)
-                    holder.legraisesBinding.lrCountTextView2.text= resources.getString(R.string.Dinner1b)
+                    holder.legraisesBinding.lrCountTextView.text= resources.getString(R.string.lr3a)
+                    holder.legraisesBinding.lrCountTextView2.text= resources.getString(R.string.lr3b)
                 }
                     9 -> {
                         holder.legraisesBinding.lrtextView.text.toString()
-                        holder.legraisesBinding.lrCountTextView.text= resources.getString(R.string.Dinner1a)
-                        holder.legraisesBinding.lrCountTextView2.text= resources.getString(R.string.Dinner1b)
+                        holder.legraisesBinding.lrCountTextView.text= resources.getString(R.string.lr2a)
                     }  10 -> {
                     holder.legraisesBinding.lrtextView.text.toString()
-                    holder.legraisesBinding.lrCountTextView.text= resources.getString(R.string.Dinner1a)
-                    holder.legraisesBinding.lrCountTextView2.text= resources.getString(R.string.Dinner1b)
+                    holder.legraisesBinding.lrCountTextView.text= resources.getString(R.string.lr4a)
+                    holder.legraisesBinding.lrCountTextView2.text= resources.getString(R.string.lr4b)
                 }
                     11 -> {
                         holder.legraisesBinding.lrtextView.text.toString()
-                        holder.legraisesBinding.lrCountTextView.text= resources.getString(R.string.Dinner1a)
-                        holder.legraisesBinding.lrCountTextView2.text= resources.getString(R.string.Dinner1b)
+                        holder.legraisesBinding.lrCountTextView.text= resources.getString(R.string.lr3a)
+                        holder.legraisesBinding.lrCountTextView2.text= resources.getString(R.string.lr3b)
                     }
                     12 -> {
                         holder.legraisesBinding.lrtextView.text.toString()
-                        holder.legraisesBinding.lrCountTextView.text= resources.getString(R.string.Dinner1a)
-                        holder.legraisesBinding.lrCountTextView2.text= resources.getString(R.string.Dinner1b)
+                        holder.legraisesBinding.lrCountTextView.text= resources.getString(R.string.lr3a)
+                        holder.legraisesBinding.lrCountTextView2.text= resources.getString(R.string.lr3b)
                     }
                     13 -> {
                         holder.legraisesBinding.lrtextView.text.toString()
-                        holder.legraisesBinding.lrCountTextView.text= resources.getString(R.string.Dinner1a)
-                        holder.legraisesBinding.lrCountTextView2.text= resources.getString(R.string.Dinner1b)
+                        holder.legraisesBinding.lrCountTextView.text= resources.getString(R.string.lr1a)
+                        holder.legraisesBinding.lrCountTextView2.text= resources.getString(R.string.lr1b)
                     }  14 -> {
                     holder.legraisesBinding.lrtextView.text.toString()
-                    holder.legraisesBinding.lrCountTextView.text= resources.getString(R.string.Dinner1a)
-                    holder.legraisesBinding.lrCountTextView2.text= resources.getString(R.string.Dinner1b)
+                    holder.legraisesBinding.lrCountTextView.text= resources.getString(R.string.lr6a)
+                    holder.legraisesBinding.lrCountTextView2.text= resources.getString(R.string.lr6b)
                 }  15 -> {
                     holder.legraisesBinding.lrtextView.text.toString()
-                    holder.legraisesBinding.lrCountTextView.text= resources.getString(R.string.Dinner1a)
-                    holder.legraisesBinding.lrCountTextView2.text= resources.getString(R.string.Dinner1b)
+                    holder.legraisesBinding.lrCountTextView.text= resources.getString(R.string.lr5a)
+                    holder.legraisesBinding.lrCountTextView2.text= resources.getString(R.string.lr5b)
                 }
                     16-> {
                         holder.legraisesBinding.lrtextView.text.toString()
-                        holder.legraisesBinding.lrCountTextView.text= resources.getString(R.string.Dinner1a)
-                        holder.legraisesBinding.lrCountTextView2.text= resources.getString(R.string.Dinner1b)
+                        holder.legraisesBinding.lrCountTextView.text= resources.getString(R.string.lr2a)
                     }
                     17 -> {
                         holder.legraisesBinding.lrtextView.text.toString()
-                        holder.legraisesBinding.lrCountTextView.text= resources.getString(R.string.Dinner1a)
-                        holder.legraisesBinding.lrCountTextView2.text= resources.getString(R.string.Dinner1b)
+                        holder.legraisesBinding.lrCountTextView.text= resources.getString(R.string.lr3a)
+                        holder.legraisesBinding.lrCountTextView2.text= resources.getString(R.string.lr3b)
                     }
                     18-> {
                         holder.legraisesBinding.lrtextView.text.toString()
-                        holder.legraisesBinding.lrCountTextView.text= resources.getString(R.string.Dinner1a)
-                        holder.legraisesBinding.lrCountTextView2.text= resources.getString(R.string.Dinner1b)
+                        holder.legraisesBinding.lrCountTextView.text= resources.getString(R.string.lr4a)
+                        holder.legraisesBinding.lrCountTextView2.text= resources.getString(R.string.lr4b)
                     }
                     19 -> {
                         holder.legraisesBinding.lrtextView.text.toString()
-                        holder.legraisesBinding.lrCountTextView.text= resources.getString(R.string.Dinner1a)
-                        holder.legraisesBinding.lrCountTextView2.text= resources.getString(R.string.Dinner1b)
+                        holder.legraisesBinding.lrCountTextView.text= resources.getString(R.string.lr1a)
+                        holder.legraisesBinding.lrCountTextView2.text= resources.getString(R.string.lr1b)
                     }
                     20 -> {
                         holder.legraisesBinding.lrtextView.text.toString()
-                        holder.legraisesBinding.lrCountTextView.text= resources.getString(R.string.Dinner1a)
-                        holder.legraisesBinding.lrCountTextView2.text= resources.getString(R.string.Dinner1b)
+                        holder.legraisesBinding.lrCountTextView.text= resources.getString(R.string.lr3a)
+                        holder.legraisesBinding.lrCountTextView2.text= resources.getString(R.string.lr3b)
                     }
                     21 -> {
                         holder.legraisesBinding.lrtextView.text.toString()
-                        holder.legraisesBinding.lrCountTextView.text= resources.getString(R.string.Dinner1a)
-                        holder.legraisesBinding.lrCountTextView2.text= resources.getString(R.string.Dinner1b)
+                        holder.legraisesBinding.lrCountTextView.text= resources.getString(R.string.lr5a)
+                        holder.legraisesBinding.lrCountTextView2.text= resources.getString(R.string.lr5b)
                     }
                     22 -> {
                         holder.legraisesBinding.lrtextView.text.toString()
-                        holder.legraisesBinding.lrCountTextView.text= resources.getString(R.string.Dinner1a)
-                        holder.legraisesBinding.lrCountTextView2.text= resources.getString(R.string.Dinner1b)
+                        holder.legraisesBinding.lrCountTextView.text= resources.getString(R.string.lr6a)
+                        holder.legraisesBinding.lrCountTextView2.text= resources.getString(R.string.lr6b)
                     }
                     23 -> {
                         holder.legraisesBinding.lrtextView.text.toString()
-                        holder.legraisesBinding.lrCountTextView.text= resources.getString(R.string.Dinner1a)
-                        holder.legraisesBinding.lrCountTextView2.text= resources.getString(R.string.Dinner1b)
+                        holder.legraisesBinding.lrCountTextView.text= resources.getString(R.string.lr4a)
+                        holder.legraisesBinding.lrCountTextView2.text= resources.getString(R.string.lr4b)
                     }
                     24 -> {
                         holder.legraisesBinding.lrtextView.text.toString()
-                        holder.legraisesBinding.lrCountTextView.text= resources.getString(R.string.Dinner1a)
-                        holder.legraisesBinding.lrCountTextView2.text= resources.getString(R.string.Dinner1b)
+                        holder.legraisesBinding.lrCountTextView.text= resources.getString(R.string.lr3a)
+                        holder.legraisesBinding.lrCountTextView2.text= resources.getString(R.string.lr3b)
                     }
                     25 -> {
                         holder.legraisesBinding.lrtextView.text.toString()
-                        holder.legraisesBinding.lrCountTextView.text= resources.getString(R.string.Dinner1a)
-                        holder.legraisesBinding.lrCountTextView2.text= resources.getString(R.string.Dinner1b)
+                        holder.legraisesBinding.lrCountTextView.text= resources.getString(R.string.lr1a)
+                        holder.legraisesBinding.lrCountTextView2.text= resources.getString(R.string.lr1b)
                     }
                     26 -> {
                         holder.legraisesBinding.lrtextView.text.toString()
-                        holder.legraisesBinding.lrCountTextView.text= resources.getString(R.string.Dinner1a)
-                        holder.legraisesBinding.lrCountTextView2.text= resources.getString(R.string.Dinner1b)
+                        holder.legraisesBinding.lrCountTextView.text= resources.getString(R.string.lr2a)
                     }
                     27 -> {
                         holder.legraisesBinding.lrtextView.text.toString()
-                        holder.legraisesBinding.lrCountTextView.text= resources.getString(R.string.Dinner1a)
-                        holder.legraisesBinding.lrCountTextView2.text= resources.getString(R.string.Dinner1b)
+                        holder.legraisesBinding.lrCountTextView.text= resources.getString(R.string.lr6a)
+                        holder.legraisesBinding.lrCountTextView2.text= resources.getString(R.string.lr6b)
                     }
                     28 -> {
                         holder.legraisesBinding.lrtextView.text.toString()
@@ -671,13 +666,13 @@ class PlanlistActivity : AppCompatActivity() {
                         holder.legraisesBinding.lrCountTextView2.text= resources.getString(R.string.Dinner1b)
                     }  29 -> {
                     holder.legraisesBinding.lrtextView.text.toString()
-                    holder.legraisesBinding.lrCountTextView.text= resources.getString(R.string.Dinner1a)
-                    holder.legraisesBinding.lrCountTextView2.text= resources.getString(R.string.Dinner1b)
+                    holder.legraisesBinding.lrCountTextView.text= resources.getString(R.string.lr4a)
+                    holder.legraisesBinding.lrCountTextView2.text= resources.getString(R.string.lr4b)
                 }
                     30 -> {
                         holder.legraisesBinding.lrtextView.text.toString()
-                        holder.legraisesBinding.lrCountTextView.text= resources.getString(R.string.Dinner1a)
-                        holder.legraisesBinding.lrCountTextView2.text= resources.getString(R.string.Dinner1b)
+                        holder.legraisesBinding.lrCountTextView.text= resources.getString(R.string.lr6a)
+                        holder.legraisesBinding.lrCountTextView2.text= resources.getString(R.string.lr6b)
                     }
 
 
