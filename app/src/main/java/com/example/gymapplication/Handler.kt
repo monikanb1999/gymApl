@@ -7,6 +7,10 @@ interface Handler {
    fun onAddClicked(view: View)
 
 }
+interface signuphandler
+{
+    fun onsignupclicked(view: View)
+}
 interface BeginHandler
 {
     fun onBeginnerClicked(view: View)

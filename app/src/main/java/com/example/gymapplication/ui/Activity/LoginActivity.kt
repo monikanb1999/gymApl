@@ -53,7 +53,7 @@ class LoginActivity : AppCompatActivity(),LogHandler {
     }
 
     override fun onSignUpClicked(view: View) {
-        startActivity(Intent(this, SignUpActivity::class.java))
+        startActivity(Intent(this, RegisterActivity::class.java))
         finish()
     }
 
