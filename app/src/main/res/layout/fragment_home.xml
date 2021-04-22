@@ -8,6 +8,7 @@
         <variable
             name="handler1"
             type="com.example.gymapplication.Handler" />
+
         <variable
             name="data"
             type="com.example.gymapplication.db.CustomerDetails" />
@@ -23,14 +24,60 @@
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:background="@drawable/b"
         tools:context=".ui.home.HomeFragment">
+        <RelativeLayout
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvprofile"
+            android:layout_width="wrap_content"
+            android:id="@+id/ivcircleview"
+            android:layout_height="wrap_content">
+            <de.hdodenhof.circleimageview.CircleImageView
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:civ_border_width="4dp"
+                android:layout_centerInParent="true"
+                android:src="@drawable/images"
+                android:onClick="@{handler1::onOpenCamClicked}"
+                app:civ_border_color="#FF000000"
+                android:layout_width="100dp"
+                android:layout_height="100dp"/>
+        </RelativeLayout>
+
+         <TextView
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="camera"
+           android:id="@+id/camera"
+             android:onClick="@{handler1::onCameraClicked}"
+           android:drawableTop="@drawable/ic_baseline_photo_camera_24"
+           app:layout_constraintTop_toBottomOf="@+id/ivcircleview"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+           android:textColor="@color/black"
+           android:textSize="15dp"/>
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:text="gallery"
+            android:id="@+id/gallery"
+            android:onClick="@{handler1::onGalleryClicked}"
+            android:drawableTop="@drawable/gallery"
+            app:layout_constraintTop_toBottomOf="@+id/camera"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:textColor="@color/black"
+            android:textSize="15dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:textStyle="bold"
+            android:textSize="20dp"
             android:layout_margin="30dp"
             android:padding="10dp"
+            android:textColor="@color/black"
             android:id="@+id/tvprofile"
             app:layout_constraintTop_toTopOf="parent"
             android:textAppearance="@style/TextAppearance.AppCompat.Large"
@@ -38,40 +85,77 @@
             app:layout_constraintRight_toRightOf="parent"
             android:text="MY PROFILE"/>
 
-        <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_margin="20dp"
-            android:onClick="@{handler1::onAddClicked}"
-            android:src="@drawable/ic_baseline_edit_24"
-            app:layout_constraintBottom_toTopOf="@+id/ivname"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintRight_toRightOf="@+id/tvprofile" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="25dp"
+                android:textSize="20dp"
+                android:textColor="@color/black"
+                android:drawableBottom="@drawable/ic_baseline_edit_24"
+                android:onClick="@{handler1::onAddClicked}"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:id="@+id/tvedit"
+                android:text="Edit"/>
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="2dp"
+            android:background="#000000"
+            android:padding="5dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            app:layout_constraintBottom_toTopOf="@+id/etheight"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/etname"
+             />
+
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Name"
+            android:textColor="@color/black"
             android:layout_margin="20dp"
             android:textSize="20dp"
+            android:ems="8"
             android:drawableLeft="@drawable/ic_baseline_person_24"
             app:layout_constraintLeft_toLeftOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/tvprofile"
+            app:layout_constraintTop_toBottomOf="@+id/gallery"
             android:id="@+id/etname"/>
+
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/ivname"
+            android:textColor="@color/black"
             android:layout_margin="30dp"
             android:text="@{viewmodel.gymdetaillist.name}"
-            app:layout_constraintTop_toBottomOf="@+id/tvprofile"
+            app:layout_constraintTop_toBottomOf="@+id/gallery"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintRight_toRightOf="@id/etheight"/>
+            />
+        <View
+            android:layout_width="0dp"
+            android:layout_height="2dp"
+            android:background="#000000"
+            android:padding="5dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            app:layout_constraintBottom_toTopOf="@+id/etweight"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/etheight"
+            />
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Height"
             android:layout_margin="20dp"
             android:textSize="20dp"
+            android:ems="8"
+            android:textColor="@color/black"
             android:drawableLeft="@drawable/ic_height"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/etname"
@@ -80,18 +164,32 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/ivheight"
+            android:textColor="@color/black"
             android:layout_margin="30dp"
             android:text="@{viewmodel.gymdetaillist.height}"
             app:layout_constraintTop_toBottomOf="@+id/ivname"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintRight_toRightOf="@id/etheight"/>
-
+        <View
+            android:layout_width="0dp"
+            android:layout_height="2dp"
+            android:background="#000000"
+            android:padding="5dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            app:layout_constraintBottom_toTopOf="@+id/ettargetweight"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/etweight"
+            />
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Weight"
+            android:textColor="@color/black"
             android:layout_margin="20dp"
             android:textSize="20dp"
+            android:ems="8"
             android:drawableLeft="@drawable/ic_baseline_line_weight_24"
             app:layout_constraintLeft_toLeftOf="parent"
            app:layout_constraintTop_toBottomOf="@+id/etheight"
@@ -100,18 +198,32 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/ivweight"
+            android:textColor="@color/black"
             android:text="@{viewmodel.gymdetaillist.weight}"
             android:layout_margin="30dp"
             app:layout_constraintTop_toBottomOf="@+id/ivheight"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintRight_toRightOf="@id/etweight"/>
-
+        <View
+            android:layout_width="0dp"
+            android:layout_height="2dp"
+            android:background="#000000"
+            android:padding="5dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            app:layout_constraintBottom_toTopOf="@+id/etgender"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/ettargetweight"
+            />
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Target Weight"
             android:layout_margin="20dp"
+            android:textColor="@color/black"
             android:textSize="20dp"
+            android:ems="8"
             android:drawableLeft="@drawable/ic_baseline_point_of_sale_24"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/etweight"
@@ -120,18 +232,32 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/ivtargetweight"
+            android:textColor="@color/black"
             android:text="@{viewmodel.gymdetaillist.targetedWeight}"
             android:layout_margin="30dp"
             app:layout_constraintTop_toBottomOf="@+id/ivweight"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintRight_toRightOf="@id/ivtargetweight"/>
-
+        <View
+            android:layout_width="0dp"
+            android:layout_height="2dp"
+            android:background="#000000"
+            android:padding="5dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            app:layout_constraintBottom_toTopOf="@+id/etdateofbirth"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/etgender"
+            />
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Gender"
+            android:textColor="@color/black"
             android:layout_margin="20dp"
             android:textSize="20dp"
+            android:ems="8"
             android:drawableLeft="@drawable/ic_baseline_person_24"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/ettargetweight"
@@ -142,6 +268,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_margin="30dp"
+            android:textColor="@color/black"
             android:text="@{viewmodel.gymdetaillist.gender}"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintRight_toRightOf="@id/ettargetweight"
@@ -153,6 +280,8 @@
             android:text="Date of Birth"
             android:layout_margin="20dp"
             android:textSize="20dp"
+            android:ems="8"
+            android:textColor="@color/black"
             android:drawableLeft="@drawable/ic_baseline_date_range_24"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/etgender"
@@ -161,6 +290,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/ivdateofbirth"
+            android:textColor="@color/black"
             android:text="@{viewmodel.gymdetaillist.dateOfBirth}"
             android:layout_margin="30dp"
             app:layout_constraintTop_toBottomOf="@+id/ivgender"

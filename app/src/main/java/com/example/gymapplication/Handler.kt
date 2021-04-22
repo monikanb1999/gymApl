@@ -5,6 +5,9 @@ import com.example.gymapplication.ui.home.HomeViewModel
 
 interface Handler {
    fun onAddClicked(view: View)
+   fun onGalleryClicked(view: View)
+   fun onCameraClicked(view: View)
+   fun onOpenCamClicked(view: View)
 
 }
 interface signuphandler

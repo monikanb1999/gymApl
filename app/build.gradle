@@ -52,6 +52,7 @@ dependencies {
     kapt "androidx.room:room-compiler:$rootProject.roomVersion"
     androidTestImplementation "androidx.room:room-testing:$rootProject.roomVersion"
 
+    implementation 'de.hdodenhof:circleimageview:3.1.0'
 //Lifecycle
     implementation "androidx.lifecycle:lifecycle-viewmodel-ktx:2.2.0-alpha01"
     implementation "androidx.lifecycle:lifecycle-livedata-ktx:2.2.0-alpha01"

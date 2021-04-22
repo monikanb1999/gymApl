@@ -28,6 +28,22 @@ class SplashActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = ActivitySplashBinding.inflate(layoutInflater)
         setContentView(binding.root)
+        if(sharedPreferences.getBoolean(STATUS_LOGIN, false))
+        {
+    startActivity(Intent(this , HomeActivity::class.java))
+    finish()
+//            val intent = Intent(this, ECGgraphActivity::class.java)
+//            intent.putExtra("result1", 3L)
+//            intent.putExtra("result2", 4L)
+////            intent.putExtra("result3", viewmodel.result3)
+////            intent.putExtra("result4", viewmodel.result4)
+//
+//            finish()
+            }
+else{
+    startActivity(Intent(this , LoginActivity::class.java))
+    finish()
+}
 
         motionlayout.addTransitionListener(object : MotionLayout.TransitionListener {
             override fun onTransitionStarted(p0: MotionLayout?, p1: Int, p2: Int) {
