@@ -10,6 +10,7 @@
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:background="@drawable/gradient"
         tools:context=".ui.plans.TroubleZoneFragment">
 
         <TextView
@@ -32,7 +33,7 @@
             app:cardCornerRadius="5dp"
             android:layout_margin="5dp"
             android:id="@+id/noactivitycardview"
-            app:cardBackgroundColor="#EEE0FF"
+            app:cardBackgroundColor="#D9FBFF"
             app:cardMaxElevation="15dp"
             app:cardPreventCornerOverlap="true"
             app:cardUseCompatPadding="true">
@@ -63,7 +64,7 @@
             app:cardCornerRadius="5dp"
             android:layout_margin="5dp"
             android:id="@+id/lightactivitycardview"
-            app:cardBackgroundColor="#EEE0FF"
+            app:cardBackgroundColor="#D9FBFF"
             app:cardMaxElevation="15dp"
             app:cardPreventCornerOverlap="true"
             app:cardUseCompatPadding="true">
@@ -91,7 +92,7 @@
             app:cardCornerRadius="5dp"
             android:layout_margin="5dp"
             android:id="@+id/Moderatelyactivecardview"
-            app:cardBackgroundColor="#EEE0FF"
+            app:cardBackgroundColor="#D9FBFF"
             app:cardMaxElevation="15dp"
             app:cardPreventCornerOverlap="true"
             app:cardUseCompatPadding="true">
@@ -119,7 +120,7 @@
             app:cardCornerRadius="5dp"
             android:layout_margin="5dp"
             android:id="@+id/veryactivecardview"
-            app:cardBackgroundColor="#EEE0FF"
+            app:cardBackgroundColor="#D9FBFF"
             app:cardMaxElevation="15dp"
             app:cardPreventCornerOverlap="true"
             app:cardUseCompatPadding="true">
@@ -141,5 +142,5 @@
         </androidx.cardview.widget.CardView>
 
     </androidx.constraintlayout.widget.ConstraintLayout>
-//
+
     </layout>

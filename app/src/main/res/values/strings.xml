@@ -5,6 +5,10 @@
     <string name="title_dashboard">Plans</string>
     <string name="title_notifications">DietPlans</string>
     <!-- TODO: Remove or change this placeholder text -->
+    <string name="enter_the_password">enter the password</string>
+    <string name="enter_the_name">enter the email-id</string>
+    <string name="enter_the_confirm_password">enter the confirm password</string>
+
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="male" />
     <string name="female" />
@@ -225,5 +229,80 @@
     <string name="Dinner30a">1 serving Ginger Roasted Salmon &amp; Broccoli and 1/2 cup Cauliflower Chappathi </string>
     <string name="Dinner30b">1 serving Easy Saag Paneer with 1/2 cup Easy Brown Rice</string>
     <string name="others">Others</string>
+
+    <string name="jj1a">Ensure that the surface on which you are jumping is hard and skid-proof.
+    Wear the right kind of shoes so that they can absorb the shock instead of putting pressure on your knees.</string>
+    <string name="jj1b">You need to ensure that you land properly so that the soles of your feet touch the ground properly.
+        For that, you need to start with low jumps and then can take it a notch higher.</string>
+    <string name="jj2a"> If you are tired of your underarm and inner thigh fat lobes then try jumping jacks for sure.</string>
+    <string name="jj2b">How many to do: If you are a beginner do 50, for intermediate 100, and for an advance at least 250. Do at least 5 reps.</string>
+    <string name="jj3a">25 jumping jacks sideways (where you lift your hands making a straight line with your shoulders), 25 front raises (where you raise your hands in the front of your face),
+        25 overheads, and so on. Do at least 100 of this.</string>
+    <string name="jj4a">While jumping part your legs sideways, widen your legs so that it pumps up your blood smoothly.</string>
+    <string name="jj4b">continue doing the same things again and again atleast 25 to 30 times, till you sweat your calories out.
+    This reduces your blood pressure and releases happy hormones in our body.</string>
+    <string name="jj5a">Stand up in your all time position, legs straight hands on thighs.
+        Now jump up by widening your legs apart, clap clap…Yes, clap your hands above your head and make the josh high...</string>
+    <string name="jj5b">Continue to do the same exercise around 25 times.
+Now change the position of your hands for a front clap. </string>
+
+    <string name="sq1a">Stand with feet a little wider than hip width,toes facing front.Drive your hips back—bending at the
+        knees and ankles and pressing your knees slightly open—as you...Sit into a squat position while still keeping your heels and toes on the ground,
+        chest up and shoulders back.</string>
+    <string name="sq1b"> Strive to eventually reach parallel, meaning knees are bent to a 90-degree angle.
+        Press into your heels and straighten legs to return to a standing upright position.</string>
+    <string name="sq2a">
+        Plant your feet on the ground.
+        Bend your knees.Lower yourself in a controlled manner.</string>
+    <string name="sq2b">Repeat.If you are a beginner,you may want to aim for ten reps. If you are fit,you can aim for 15-30 reps each set. Do one to three sets.</string>
+    <string name="sq3a">Plant your feet flat on the ground, toes slightly outward.
+        Position the bar behind your head, with the weight on your upper back.Bend your knees and slowly lower your hips as if to "sit" on an invisible chair.</string>
+    <string name="sq3b">Contract your abs as you move through the squat.
+         Push straight back up, lifting your hips up and forward to lift toward starting position.</string>
+    <string name="sq4a">Weight shift squat: Start with feet wide. Shift your weight to the right so that you can take weight off your left foot (but keep your toes on the ground for balance). </string>
+    <string name="sq4b">Complete 10 squats with weight shifted right and 10 squats with weight shifted left.</string>
+    <string name="sq5a"> Slow squats: Count from one to five slowly on the downward phase of the squat and then count to five slowly as you return to the starting position. </string>
+    <string name="sq5b">Focus on perfect form. Repeat 10 times.</string>
+    <string name="sq6a">Concentric squats: Start in a lowered squat position. Count from one to five slowly to bring your body to a standing position. </string>
+    <string name="sq6b">Then return to your squat position in one count and repeat. Focus on the concentric contraction, or lifting phase. Repeat 15 times.</string>
+    <string name="sq7a">Kickback squat: Complete a full squat but as you complete the lifting phase, transfer your weight to your left leg and extend your right foot back and off the floor as if you are kicking the wall behind you. </string>
+    <string name="sq7b">Repeat 10 times on the right and 10 times on the left.</string>
+
+    <string name="pu1a">Standard Pushups/Max Reps in a Single Set
+Your goal is to establish a baseline for the total number of pushups you can do in a single set in the first week. Each subsequent week, you’ll test that number.</string>
+    <string name="pu1b"> On the final day of the month, you should hit your goal (if you haven’t done it by then) of 50 pushups in a set.</string>
+    <string name="pu2a"> Paused Pushups
+Focus on pushup discipline and form mastery, prolonging each rep at the hardest point of the rep (the bottom). </string>
+    <string name="pu2b">Each week, we’ll up this number to build increasing time-under-tension, preparing your muscles for the tension you’ll experience every time you take the max-reps pushup test.</string>
+    <string name="pu3a">Close-Grip Pushup Variation
+Challenge your triceps to drive the pushup (and give your chest a bit of a break) with these close-grip variations.</string>
+    <string name="pu3b"> Building triceps strength will assist you as you lock out at the top of every pushup rep.</string>
+    <string name="pu4a">Standard Pushups, Sets
+Go back to the basic pushup, aiming to do your reps in sets with short breaks in between each set.</string>
+    <string name="pu4b"> This teaches your body to deal with the full breadth of volume it’ll need to reach to handle 50 total pushups.</string>
+    <string name="pu5a">Day 5: Pushups with Back and Core Integration.
+A pushup is, first and foremost, targeting your chest—but it’s not all chest.</string>
+    <string name="pu5b"> Core, glutes, and midback muscles must also fire to help you get through each rep. These variations remind you of that.</string>
+    <string name="pu6a">Pushups at Tempo.
+Explore and own your full pushup range of motion by playing with double-explode pushups, half-full pushups, and other variations that’ll challenge your chest and triceps in different ways. </string>
+    <string name="pu6b">You’re still piling up reps, though, continuing to condition your body for your ultimate goal.</string>
+
+
+    <string name="lr1a">Single leg raise one way to make the leg raise easier is to bend your knees during the movement, but another less taxing variation is to lift one limb at a time. </string>
+    <string name="lr1b">Keeping one leg grounded will help stabilise your body as you raise the other leg, so you can focus on perfecting your form.</string>
+    <string name="lr2a">Medicine ball leg raise.
+Add an extra challenge for your abs, hips and adductors (the insides of your thighs) by gripping a medicine ball between your feet.</string>
+    <string name="lr3a">Weighted leg raise As with most exercises, you can make the leg raise tougher by introducing some weight. </string>
+    <string name="lr3b">With this variation you hold a dumbbell or sandbell between your feet as you perform the exercise. Keep the weight light, because it really doesn’t take much to make the leg raise very challenging indeed, and also you don’t want a heavy dumbbell to slip when you’re holding it with legs fully extended above your crotch.</string>
+    <string name="lr4a">Leg raise on dip station.
+If you’re looking to take your leg raises airborne but aren’t quite ready to try the hanging leg raise yet, head for the dip station. You’ll work your core all the harder to keep your torso still, and your arms and shoulders get a workout as well. Supporting yourself on both arms, which should be extended and by your sides, raise your legs straight out in front of you, then slowly lower them again.</string>
+    <string name="lr4b"> If this is proving too tough then you can bend your legs and bring your knees up instead.</string>
+    <string name="lr5a">Hanging leg raise.
+        About as tough as leg raising gets, this variation involves hanging from a pull-up bar or gymnastic rings while you raise your legs until they are parallel to the ground. </string>
+    <string name="lr5b">Once again, you can start by bending your legs and raising your knees to your chest as a way of working up to the full exercise, and it’s also worth trying some dead hangs first to ensure you have the upper-body and grip strength to hold yourself up while leg raising.</string>
+    <string name="lr6a">Hanging knee raise.
+If you’re building up to the hanging leg raise, or halfway through a set of them and realise you haven’t got the strength to get through to the end, give the hanging knee raise a go. Hang from a bar with an overhand grip. Draw your knees up slowly until your thighs are parallel to the ground, then lower them slowly. </string>
+    <string name="lr6b">It’s still a great move for hammering your abs, just not quite as tough as the full hanging leg raise.</string>
+
 
 </resources>

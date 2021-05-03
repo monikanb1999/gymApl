@@ -2,7 +2,7 @@ package com.example.gymapplication.ui.home
 
 import android.content.Intent
 import android.os.Bundle
-import android.text.TextUtils
+import android.provider.MediaStore
 import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
@@ -14,9 +14,8 @@ import androidx.lifecycle.ViewModelProvider
 import com.example.gymapplication.BR
 import com.example.gymapplication.Handler
 import com.example.gymapplication.databinding.FragmentHomeBinding
-import com.example.gymapplication.db.CustomerDetails
 import com.example.gymapplication.ui.Activity.EditableHomeActivity
-import com.example.gymapplication.ui.Activity.HomeActivity
+
 
 class HomeFragment : Fragment(),Handler {
 
@@ -26,14 +25,15 @@ class HomeFragment : Fragment(),Handler {
 
 
     override fun onCreateView(
-            inflater: LayoutInflater,
-            container: ViewGroup?,
-            savedInstanceState: Bundle?
+        inflater: LayoutInflater,
+        container: ViewGroup?,
+        savedInstanceState: Bundle?
     ): View? {
         homeViewModel =
                 ViewModelProvider(this).get(HomeViewModel::class.java)
         binding = FragmentHomeBinding.inflate(layoutInflater)
         return binding.root
+
 //        adapter= GymRecyclerAdapter(this, this)
 //        binding.gymrecyclerview?.setHasFixedSize(true)
 //        val layoutManager: RecyclerView.LayoutManager = LinearLayoutManager(this)
@@ -64,7 +64,36 @@ class HomeFragment : Fragment(),Handler {
         startActivity(Intent(context, EditableHomeActivity::class.java))
     }
 
+    override fun onGalleryClicked(view: View) {
+        val getIntent = Intent(Intent.ACTION_GET_CONTENT)
+        getIntent.type = "image/*"
 
+        val pickIntent = Intent(Intent.ACTION_PICK, MediaStore.Images.Media.EXTERNAL_CONTENT_URI)
+        pickIntent.type = "image/*"
+
+        val chooserIntent = Intent.createChooser(getIntent, "Select Image")
+        chooserIntent.putExtra(Intent.EXTRA_INITIAL_INTENTS, arrayOf(pickIntent))
+
+        startActivityForResult(chooserIntent, PICK_IMAGE)
+    }
+
+    override fun onCameraClicked(view: View) {
+
+    }
+
+    override fun onOpenCamClicked(view: View) {
+        val intent = Intent()
+        intent.type = "image/*"
+        intent.action = Intent.ACTION_GET_CONTENT
+        startActivityForResult(Intent.createChooser(intent, "Select Picture"), PICK_IMAGE)    }
+
+    val PICK_IMAGE = 1
+
+    override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
+        if (requestCode == PICK_IMAGE) {
+            //TODO: action
+        }
+    }
 }
 
 

@@ -11,6 +11,7 @@
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
+        android:background="@drawable/gradient"
         android:layout_height="match_parent"
         tools:context=".ui.Activity.LoginActivity">
 
@@ -18,47 +19,91 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="LOGIN"
+            android:textColor="#170578"
             android:textStyle="bold"
-            android:textSize="25dp"
+            android:textSize="28dp"
             android:id="@+id/topiclog"
+            android:padding="15dp"
+            android:layout_margin="30dp"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintRight_toRightOf="parent"
-            app:layout_constraintLeft_toLeftOf="parent"
-            android:layout_marginTop="85dp" />
-
-        <EditText
+            app:layout_constraintLeft_toLeftOf="parent"/>
+        <ImageView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/etname"
-            android:hint="enter your name"
+            android:id="@+id/image"
             app:layout_constraintTop_toBottomOf="@+id/topiclog"
+            android:src="@drawable/gymmmm"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"/>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/filledTextField"
+            android:layout_width="match_parent"
+            android:layout_margin="25dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+
+            app:layout_constraintTop_toBottomOf="@+id/image"
+            android:hint="@string/enter_the_name"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:padding="15dp"
+                android:id="@+id/etname"
+                android:textColorHint="@color/black"
+                android:layout_marginTop="30dp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                />
+
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/filledTextField2"
+            android:layout_width="match_parent"
+            android:layout_margin="25dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            app:passwordToggleEnabled="false"
+            app:layout_constraintTop_toBottomOf="@+id/filledTextField"
+            android:hint="@string/enter_the_password"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+            <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:padding="15dp"
+            android:id="@+id/etpassword"
+            android:textColorHint="@color/black"
             android:layout_marginTop="30dp"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintRight_toRightOf="parent" />
-
-        <EditText
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/etpassword"
-            android:hint="enter your password"
-            android:layout_margin="20dp"
-            android:password="true"
-            app:layout_constraintLeft_toLeftOf="parent"
-            app:layout_constraintRight_toRightOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/etname" />
-
-
-
+        </com.google.android.material.textfield.TextInputLayout>
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/login"
+            android:ems="10"
+            android:padding="20dp"
+            android:layout_margin="50dp"
             app:layout_constraintRight_toRightOf="parent"
             app:layout_constraintLeft_toLeftOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/filledTextField2"
             android:onClick="@{handler::onSaveClicked}"
             android:text="SAVE" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:id="@+id/notregistered"
+            android:onClick="@{handler::onSignUpClicked}"
+            android:text="if you not have an account??Register!!!"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:textColor="#170578"
+            android:layout_margin="25dp"/>
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </layout>

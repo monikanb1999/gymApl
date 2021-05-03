@@ -4,17 +4,22 @@
     xmlns:tools="http://schemas.android.com/tools">
 
     <data>
-    <variable
-    name="Edithandler"
-    type="com.example.gymapplication.HomeDetails" />
+        <variable
+            name="Edithandler"
+            type="com.example.gymapplication.HomeDetails" />
         <variable
             name="rbhandler"
             type="com.example.gymapplication.HomeDetails" />
+        <variable
+            name="etviewmodel"
+            type="com.example.gymapplication.ui.home.EditableViewModel" />
+
     </data>
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:background="@drawable/gradient"
         tools:context=".ui.Activity.EditableHomeActivity">
         <TextView
             android:layout_width="wrap_content"
@@ -28,6 +33,7 @@
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintRight_toRightOf="parent"
             android:text="MY PROFILE"/>
+        <!--        android:text="@{viewmodel.gymdetaillist.name}"-->
 
         <EditText
             android:layout_width="wrap_content"
@@ -37,6 +43,7 @@
             android:textSize="20dp"
             android:drawableLeft="@drawable/ic_baseline_person_outline_24"
             app:layout_constraintLeft_toLeftOf="parent"
+            android:text="@{etviewmodel.editablegymdetaillist.name}"
             app:layout_constraintTop_toBottomOf="@+id/tvprofile"
             android:id="@+id/etname"/>
         <EditText
@@ -47,6 +54,7 @@
             android:textSize="20dp"
             android:drawableLeft="@drawable/ic_height"
             app:layout_constraintLeft_toLeftOf="parent"
+            android:text="@{etviewmodel.editablegymdetaillist.height}"
             app:layout_constraintTop_toBottomOf="@+id/etname"
             android:id="@+id/etheight"/>
 
@@ -56,6 +64,7 @@
             android:hint="enter weight"
             android:layout_margin="15dp"
             android:textSize="20dp"
+            android:text="@{etviewmodel.editablegymdetaillist.weight}"
             android:drawableLeft="@drawable/ic_baseline_line_weight_24"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/etheight"
@@ -69,6 +78,7 @@
             android:textSize="20dp"
             android:drawableLeft="@drawable/ic_baseline_point_of_sale_24"
             app:layout_constraintLeft_toLeftOf="parent"
+            android:text="@{etviewmodel.editablegymdetaillist.targetedWeight}"
             app:layout_constraintTop_toBottomOf="@+id/etweight"
             android:id="@+id/ettargetweight"/>
 
@@ -113,6 +123,7 @@
             android:textSize="20dp"
             android:drawableLeft="@drawable/ic_baseline_date_range_24"
             app:layout_constraintLeft_toLeftOf="parent"
+            android:text="@{etviewmodel.editablegymdetaillist.dateOfBirth}"
             app:layout_constraintTop_toBottomOf="@+id/etgender"
             android:id="@+id/etdateofbirth"/>
         <Button

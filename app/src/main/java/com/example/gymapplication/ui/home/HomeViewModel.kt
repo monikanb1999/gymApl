@@ -20,10 +20,7 @@ class HomeViewModel (application: Application): AndroidViewModel(application) {
     fun inserttable(customerDetails: CustomerDetails)= viewModelScope.launch(Dispatchers.IO) {
         tableRespository.inserttablerepository(customerDetails)
     }
-    fun updatetable(customerDetails: CustomerDetails)= viewModelScope.launch(Dispatchers.IO) {
-        tableRespository.updatetablerepository(customerDetails)
-    }
-//    fun updatetable(customerDetails: CustomerDetails)=viewModelScope.launch(Dispatchers.IO) {
+//    fun updatetable(customerDetails: CustomerDetails)= viewModelScope.launch(Dispatchers.IO) {
 //        tableRespository.updatetablerepository(customerDetails)
 //    }
 }

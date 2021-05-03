@@ -20,6 +20,7 @@ import com.example.gymapplication.FoodDetails
 import com.example.gymapplication.R
 import com.example.gymapplication.databinding.FoodrecordBinding
 import com.example.gymapplication.databinding.FragmentNotificationsBinding
+import com.example.gymapplication.databinding.JumpingjacksBinding
 import com.example.gymapplication.ui.Activity.FoodListActivity
 
 class FoodsFragment : Fragment(), FoodDetails {

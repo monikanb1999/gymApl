@@ -16,11 +16,11 @@ import com.example.gymapplication.db.CustomerDetails
 import com.example.gymapplication.ui.home.HomeFragment
 import com.example.gymapplication.ui.home.HomeViewModel
 
-class RegisterActivity : AppCompatActivity(), RegisterHandler {
+class RegisterActivity : AppCompatActivity(),RegisterHandler {
     lateinit var binding: ActivityRegisterBinding
     lateinit var gender :String
 
-    val RegisterviewModel: HomeViewModel by lazy {
+    private val registerviewmodel: HomeViewModel by lazy {
         ViewModelProvider(this).get(HomeViewModel::class.java)
     }
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -45,7 +45,7 @@ class RegisterActivity : AppCompatActivity(), RegisterHandler {
                 gender,
                 binding.regage.text.toString(),
             )
-            RegisterviewModel.inserttable(table)
+            registerviewmodel.inserttable(table)
             startActivity(Intent(this, HomeActivity::class.java))
             Toast.makeText(this, "done the process", Toast.LENGTH_LONG).show()
         } else {
@@ -54,12 +54,12 @@ class RegisterActivity : AppCompatActivity(), RegisterHandler {
         }
     }
 
-    override fun onRegRadiofemaleButtonClicked(view: View) {
-gender="female"    }
+    override fun onRegRadiofemaleButtonClicked(view: View)
+    { gender="female"    }
 
-    override fun onRegRadiomaleButtonClicked(view: View) {
-gender="male"    }
+    override fun onRegRadiomaleButtonClicked(view: View)
+    { gender="male"    }
 
-    override fun onRegRadiootherButtonClicked(view: View) {
-gender="others"    }
+    override fun onRegRadiootherButtonClicked(view: View)
+    { gender="others"    }
 }

@@ -25,7 +25,7 @@ class LoginActivity : AppCompatActivity(),LogHandler {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_login)
+//        setContentView(R.layout.activity_login)
         binding = ActivityLoginBinding.inflate(layoutInflater)
         setContentView(binding.root)
         binding.handler=this
@@ -52,6 +52,10 @@ class LoginActivity : AppCompatActivity(),LogHandler {
     }
     }
 
+    override fun onSignUpClicked(view: View) {
+        startActivity(Intent(this, RegisterActivity::class.java))
+        finish()
+    }
 
 
 //    override fun onSaveClicked(view: View) {
